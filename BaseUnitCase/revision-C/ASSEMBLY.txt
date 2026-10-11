@@ -1,0 +1,160 @@
+REVISION C - BASE UNIT DESKTOP ENCLOSURE - 2026-10-11
+
+Digital mechanical prototype completed; physical fit is UNTESTED.
+Confirmed hardware: Pi 5 8GB WITHOUT cooler; nRF52840 DK revision 3.0.3,
+user-reported additional board marking 2026.21. Spare cooler space is retained.
+See CONFIRMED-HARDWARE-FIT.txt before printing in Bambu Studio.
+User-authorized resumption supersedes the historical PAUSED status for this
+revision only. Prototype A and the unfinished Revision B snapshot are preserved.
+No firmware, Pi services, firewall, radio, Git identity, README or PCB was changed.
+
+DESIGN
+Official SC1635 7-inch Touch Display 2, landscape 1280 x 720. Screen is 15 degrees
+BACK from vertical, 75 degrees above horizontal. This is not the old 45-degree
+foot profile. Case 206.32 x 137.24 x 123 mm in display-local coordinates. Desk
+support footprint 230.32 x 240 mm excluding screw-head projection. Screen top
+177.56 mm above desk before pads; lower rear shell corner is 13.17 mm above desk.
+
+Front bezel retains the outer glass perimeter using compliant tape. The Pi 5
+8GB remains on the display's original supplied mounting arrangement. The radio
+is inside the removable rear cover on three nylon-fastened towers. Side supports
+bolt through the case wall into captive M4 nuts; no friction-fit stand tabs.
+
+SOURCE AND OUTPUTS
+- enclosure.py: editable parametric CadQuery master, dimensions in mm.
+- render_assembly.py: deterministic software rasterizer of actual CAD tessellation.
+- verify_exports.py: independent STEP/STL reimport, volume and screen-angle checks.
+- Individual STEP files: editable solids for downstream mechanical CAD.
+- Individual STL files: print orientation as exported; scale 100%, units mm.
+- assembled_enclosure.step: the six assembled structural solids (two stands).
+- hardware_clearance_PROXIES.step: labelled by filename as conservative envelopes,
+  NOT detailed vendor CAD and NOT a manufacture-ready hardware assembly.
+- assembled-front-three-quarter.png / assembled-rear-three-quarter.png /
+  assembled-side.png: renders of actual enclosure geometry and screw-head locations.
+  Screen is inactive. Hardware internals are omitted from exterior renders.
+- validation.json / export-verification.json: actual digital check results.
+- SOURCES.txt: verified reference dimensions, links, provenance and limitations.
+
+BUILD
+Install tools OUTSIDE the repository. In your preferred Python virtual environment:
+  python -m pip install cadquery==2.8.0 trimesh==5.1.1 pillow numpy
+  python enclosure.py
+  python verify_exports.py
+  python render_assembly.py
+Run commands in this revision-C directory. Nothing depends on a legacy workspace.
+The rendering script uses Windows Segoe UI if available, with a default fallback.
+Generated files are overwritten by their owning scripts. Edit the master first.
+
+PRINT LIST / ORIENTATION
+1 front_bezel: front face down, nominal 206.32 x 137.24 x 4 mm.
+1 vented_body: retaining-ring/front face down, nominal 206.32 x 137.24 x 116 mm.
+1 rear_cover_radio_mount: outside face down; towers up; 206.32 x 122.94 x 27 mm.
+1 rear_cable_strip: outside face down; 206.32 x 14 x 3 mm.
+2 side_stand_print_two: broad flat face down; 240 x 115.92 x 12 mm each.
+1 fastener_coupon first: 45 x 24 x 8 mm; holes, insert bore, M4 nut recess.
+The largest part needs a usable 240 x 116 mm area BEFORE brim and printer margins.
+Allow about 250 mm usable length with a 5 mm brim at each end. User confirmed
+Bambu Lab H2D Pro. Select its exact profile in Bambu Studio and inspect the plate
+preview at 100% scale; no printer profile or slicing has been validated here.
+Starting process proposal: PETG, 0.2 mm layers, 4 perimeters, 5 top/bottom layers,
+25-35% infill. Heavy solid-area side supports improve stability. Actual sliced
+mass, bridging and strength must be checked. No slicer or print test was run.
+Tall shell is open to the top in print orientation; vents bridge 3 mm. M4 holes
+and nut recesses bridge locally; inspect sag and nut fit in slicer/coupon.
+
+FASTENER / CONSUMABLE BOM (VERIFY COUPON BEFORE BUYING OR FULL PRINT)
+4 M3 x 8 mm machine screws: front bezel, nominal 4 mm engagement after 4 mm bezel.
+This replaces the earlier M3 x 10 recommendation and gives 2.1 mm blind-hole
+bottom clearance. Do not use M3 x 10 without rechecking the actual stack.
+6 M3 x 8 mm machine screws: rear cover (4) and lower strip (2), 5 mm engagement.
+10 M3 heat-set inserts: 4 front / 6 rear. CAD has diameter 4.0 x 6.1 mm blind
+pilot pockets. Select inserts with a supplier-specified pilot compatible with
+this bore and length <= 5.5 mm, or edit the bore for your actual insert. Require
+an effective threaded length >=4 mm. Keep outside diameter <=5 mm in the 8 mm
+columns; an insert diameter is NOT its pilot-hole diameter. Do not
+assume every M3 insert fits. Install with no electronics/glass in the enclosure.
+4 M4 x 25 mm low-profile/button-head screws plus 4 M4 hex nuts: two per stand.
+M4 nut pockets: 7.2 mm across flats, 3.4 mm effective depth, accessible inside.
+Nominal standard M4 nut 7 mm AF / 3.2 mm thick; coupon confirms print tolerance.
+With 12 mm stand and 12 mm wall boss, screw tips extend approximately 1 mm inward.
+3 M3 x 35 mm NYLON screws, 3 nylon nuts and 6 thin nylon washers for the DK.
+Rear plate 3 + tower 24 + PCB assumed 1.6 + washers/nut leave a small thread tail.
+Use 6 mm or smaller washer OD at PCB; verify each real board landing zone.
+Place one nylon washer under each external screw head and one under each
+component-side nut. NO washer between PCB underside and the support tower;
+adding one changes the stated board plane and clearances.
+Reuse original supplied display/Pi M2.5 screws/standoffs. No replacement screw
+length is specified for display threads. Do not bottom longer screws into it.
+Nonconductive compliant tape, nominal 0.5 mm front + 0.5 mm rear of glass edge.
+Non-slip desk pads for both runners and small nylon cable ties for strain relief.
+Fastener preload, material strength and insert pull-out have not been qualified.
+
+ASSEMBLY / SERVICE (UNPOWERED HARDWARE AT A USER-PLANNED MAINTENANCE TIME)
+1. Print coupon; check screw clearance, nut fit and chosen heat-set insert.
+   Install body inserts and inspect for bulging, splits or melt intrusion.
+2. Lay bezel front-down on a clean soft support. Place compliant tape only on
+   straight outer-glass contact edges. Insert glass into 190.32 x 121.24 pocket.
+   Nominal side clearance is 0.5 mm per side. Aperture is 184.32 x 115.24 mm;
+   it does not overlap the active 154.56 x 86.94 display area.
+3. Attach bare Pi to display with original hardware. The verified mounting pose
+   has USB-A/Ethernet facing case right and USB-C facing the lower case edge.
+   A reversed Pi pose has not been checked for plugged-cable access. Keep FFC
+   out of the lip and screws. Pi and any future added stack must stay inside the envelope
+   in SOURCES.txt; no HAT/SSD compatibility has been established.
+4. Add rear-edge compliant tape. Lower body onto bezel. Body must bottom on the
+   bezel shoulder, never clamp the glass. Pocket height 2.2 mm versus nominal
+   0.7 glass + 0.5 + 0.5 tape = 1.7 mm. Adjust soft tape to remove rattle without
+   glass bending. Tighten four bezel screws gently with frame supported.
+5. Insert four M4 nuts from inside the open rear into side pockets. Fit two stands
+   outside the shell and fasten with M4 screws. Both runners must sit flat. Add
+   non-slip pads at both front and rear ends; verify equal pad thickness.
+6. The user confirmed nRF52840 DK 3.0.3; the CAD matches its official three
+   mounting centres. Check printed fit without force. Board underside faces
+   cover; components face the display. Place on the three 24 mm towers and fasten
+   with nylon screws/washers/nuts. Never pull PCB down over an underside component.
+   Official laminate specification says nominal ~1.6 mm. Check actual component
+   landing zones; the drawings do not certify your printed washers/tower fit.
+7. Connect the same radio USB port already used by the firmware: J2 is interface-
+   MCU USB at the left edge; J3 is nRF USB at the lower edge. Do not swap ports
+   assuming equivalent operation. For either route, reserve a plug projection
+   <=25 mm plus approximately 10 mm for its bend. The old 35 mm straight-space
+   figure did not also provide a bend; longer boots may need right-angle cables.
+   Verify the actual cable and leave a loose service loop. Preserve a gentle FFC bend (initial 10 mm radius allowance only;
+   actual cable specification governs). Keep all cables left/below the antenna
+   region. Rear-cover removal needs a disconnectable or sufficiently slack loop.
+8. Keep the DK-to-Pi USB cable entirely inside, with a removable-cover service
+   loop below/left of the antenna reserve. Only the Pi power supply lead exits.
+   Fit rear cover using four M3 screws. Put the insulated Pi power cable in the
+   single 24 x 12 mm split exit, then fit lower strip with two M3 screws. The
+   0.3 mm horizontal seam gives print clearance. Deburr edges; use a soft sleeve
+   or edge protection. Tie slots provide strain relief on insulated cable only.
+9. Case is enclosed except ventilation and cable apertures; it is NOT sealed,
+   dustproof, spill-proof or an ingress-protection-rated electrical enclosure.
+10. For servicing, shut down/disconnect power, support cover, release strain-relief
+    ties as needed and remove four cover screws. Withdraw cover rearward without
+    pulling USB. The lower strip can stay or be removed to release cables without
+    threading plugs. Access to Pi ports/SD and DK switches requires cover removal.
+    Remove the body only after supporting the glass/Pi assembly on a soft surface.
+
+DIGITAL VALIDATION / LIMITS
+All six unique printable parts pass OpenCascade B-rep validity, one-solid checks,
+closed/wound STL topology, positive volume and independent STEP/STL volume agreement.
+Six assembled structural solids have zero pairwise volumetric collision. The
+75-degree plane and backward lean are measured again from the exported STEP.
+Hardware reserves clear the shell; DK underside clears it except intended towers.
+Rear cover/board extraction checked at offsets 5, 15, 35, 60 and 100 mm; this is
+sampled solid clearance, not proof of every cable sweep or every intermediate pose.
+Bare-Pi mass model assumes 45% effective solid PETG + display 300 g + bare Pi
+50 g (estimate) + DK 45 g + wires/fasteners 50 g. Current exact estimated mass,
+COM and tip threshold are in validation.json; none are measured.
+Predicted tip threshold is approximately 5.5 N at screen-top height;
+actual print mass, pads, friction, tapping, cable pull and loading can change it.
+Use validation.json for exact current numbers. This is not a measured force rating.
+
+REMAINING PHYSICAL GATES
+Cooler absence and DK revision are confirmed. Remaining: DK tower landing zones; true
+cable plugs and bend radii; glass edge/padding stack; chosen inserts; H2D Pro plate preview;
+slicer preview; unpowered dry fit; screw/insert/foot load tests; cable-pull and
+screen-tap stability; powered temperature soak and radio range after user-approved
+installation. These do not block delivery of this digital design but do block
+claiming qualified fit, safe operating temperatures or RF performance.

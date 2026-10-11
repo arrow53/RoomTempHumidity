@@ -1,0 +1,97 @@
+CONFIRMED HARDWARE FIT / PRINT CHECKPOINT - REVISION C
+2026-10-11
+
+USER-CONFIRMED: Raspberry Pi 5 8GB, NO cooler; nRF52840 DK revision 3.0.3,
+additional marking 2026.21. The old unidentified-cooler and DK-revision gates
+are closed. 2026.21 is recorded as supplied, not interpreted as another revision.
+
+RESULT: DIGITAL FIT PASSES WITH DOCUMENTED PORTS-RIGHT PI POSE AND CABLE LIMITS.
+This is not a print-ready release: exact insert, H2D Pro slicer preview and
+actual USB cable boot/bend checks remain unresolved. No physical fit, thermal,
+RF, tap/slide/tip test or Bambu Studio slicing was performed.
+
+WHAT WAS VERIFIED
+- Official Nordic 3.0.3 Gerber outline, T08 drill and pick-place source checked.
+  Three selected holes exactly match CAD: (13.97,7.62), (15.24,55.88),
+  (66.04,12.70) mm. Hole nominal diameter 3.2004 mm. PCB outline including
+  projection is 136.525 x 63.5 mm. Laminate drawing confirms nominal ~1.6 mm.
+- Both assembly-drawing sides inspected: battery holder faces the rear cover;
+  24 mm towers leave space behind the PCB. Exact heights/solder tails still
+  require inspection on the physical board; drawings are not full 3D proof.
+- Official bare Pi STEP imported (2689 solids). Overall mounted bounds in the
+  verified pose: x60.530..149.030, y38.990..96.620, z15.740..34.716 mm.
+  Its bounding solid clears every enclosure part, so all model components do.
+  Space to radio-component reserve: 39.684 mm. Old spare depth remains intact.
+- J2 left plug, bend and drop route; J3 bottom plug and bend; Pi USB-C lower
+  plug/bend; and Pi right USB-A plug/bend reservation boxes all clear the shell.
+  These are practical cable envelopes, not scans of the user's cable plugs.
+- Rear cover and cable strip now have ONE split Pi-power exit. The former
+  second cable exit is closed. CAD exports and assembled renders regenerated.
+  STL hash checks in the report establish repeatable regeneration of this version.
+- Upper and lower shell each have 54 nominal 3 x 23 mm slots: 3726 mm2 each.
+  Rear cover has 21 nominal 3 x 22 mm slots: 1386 mm2. Side openings are partly
+  obscured by stand plates and are not counted as minimum free ventilation.
+  Do not obstruct bottom slots with cables. No cooler means passive cooling;
+  ventilation area alone is not a temperature guarantee.
+
+PORTS, SWITCHES AND SERVICE
+Pi preferred orientation: USB-A/RJ45 to case right, USB-C toward case bottom.
+Use original display standoffs/screws. Reversed orientation is not plug-validated.
+DK J2 at left is interface-MCU USB. J3 at bottom is nRF USB. Retain the working
+firmware's actual connection; this design does not make the ports interchangeable.
+The DK-to-Pi USB cable stays entirely internal. Only Pi power uses the single
+split lower exit. Leave an internal USB service loop for rear-cover removal. Use short
+boots: <=25 mm projection beyond board-edge/socket-mouth region plus ~10 mm for
+turning, within the illustrated reserves. Actual cable bend specification governs;
+longer or stiff boots may require right-angle cables. Do not treat the previous
+35 mm straight allowance as 35 mm of plug PLUS a bend.
+The DK buttons/reset/selectors and Pi power button/SD/ports have NO external
+actuators or custom port cutouts. Access requires removing the rear cover. DK
+controls face inward, so withdraw/support the cover before reaching them. USB
+service loops must allow it to move; disconnect first if they do not. Power down
+and unplug for assembly. Pi SD access can be constrained by the display and may
+need loosening the original mount; do not claim tool-free card servicing.
+
+FASTENER CLARIFICATION / ACTUAL PRINT BLOCKERS
+1. Exact M3 insert maker/part number is still needed. Current bore is diameter
+   4.0 mm x 6.1 mm effective blind depth. Specify supplier-recommended 4.0 mm
+   pilot, insert length <=5.5 mm, useful thread >=4 mm and OD <=5 mm. An M3 label
+   alone is not sufficient. The common 5.7 mm-length insert does NOT meet this
+   current specification; do not force it in. Adjust bore/depth if your insert
+   differs, then rerun checks. Print/test fastener_coupon first.
+2. Bezel screw correction: use 4 x M3x8, rather than earlier M3x10. It gives
+   nominal 4 mm engagement and 2.1 mm bottom clearance. Rear stays 6 x M3x8,
+   giving 5 mm engagement and 1.1 mm bottom clearance. No extra washers are
+   assumed in these dimensions. Do not overtighten against the glass.
+3. Stand fasteners unchanged: 4 x M4x25 and 4 M4 nuts (7 mm AF nominal); pockets
+   7.2 mm AF x 3.4 mm deep. DK: 3 x M3x35 nylon screws/nuts, six thin nylon
+   washers <=6 mm OD. Put washers under external screw heads and component-side
+   nuts, NEVER between PCB and support tower. Verify real component landing zones.
+4. Printer confirmed by user: Bambu Lab H2D Pro. Select that exact profile in
+   Bambu Studio and inspect the plate preview. No slicer verification performed.
+   Longest part 240 x 115.92 x 12 mm; about 250 mm length needed with a 5 mm brim.
+   Tall body 206.32 x 137.24 x 116 mm. Keep all parts at their original scale.
+   Import STL at 100% / millimetres. Do not scale down to fit the plate.
+5. Confirm actual Pi USB-C and chosen DK USB cable boot length/width/bend radius,
+   then unpowered dry fit. The digital boxes cannot qualify unspecified cables.
+
+INDIVIDUAL STL IMPORT LIST (all in this directory)
+1 x front_bezel.stl              front face down
+1 x vented_body.stl              retaining ring / front face down
+1 x rear_cover_radio_mount.stl   external face down, towers up
+1 x rear_cable_strip.stl         flat external face down
+2 x side_stand_print_two.stl     broad flat face down; DUPLICATE once
+1 x fastener_coupon.stl          test FIRST, flat base down
+Import these as separate objects, preferably across appropriate build plates.
+Do not import assembled_enclosure.step or hardware_clearance_PROXIES.step as a
+single print. Inspect bridge/overhang preview, particularly M4 horizontal holes
+and nut pockets. No Bambu Studio project/3MF or validated slicing profile supplied.
+
+DETAILED EVIDENCE
+confirmed-hardware-fit.json: source hashes, official-model bounds, actual
+component/USB coordinates, collision volumes and repeat-generation STL hash confirmations.
+verify_confirmed_hardware.py: repeatable checks with explicit external reference
+paths. SOURCES.txt: authoritative links, pose derivation and model disclaimers.
+validation.json: revised bare-Pi estimated mass/COM/tipping calculation. Bare Pi
+50 g is an estimate; total mass approx 0.88 kg and tipping threshold approx 5.5 N.
+Neither figure is a physical rating. Check printed mass, pads and stability.

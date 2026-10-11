@@ -61,7 +61,7 @@ bias remain unqualified. A3 is **quote/DFM only**, not production/purchase appro
 | [SensorPCB](SensorPCB/README.md) | Current A3 native KiCad and selected quote/DFM files |
 | [BaseUnitFirmware](BaseUnitFirmware/README.md) | Pinned nRF52840 RCP source/build/UART reference |
 | [BaseUnitApplication](BaseUnitApplication/README.md) | Pi collector/dashboard and sanitized OTBR reference |
-| [BaseUnitCase](BaseUnitCase/README.md) | Existing prototype-A snapshot; **design paused** |
+| [BaseUnitCase](BaseUnitCase/README.md) | Revision C digital prototype, CAD and [print files](BaseUnitCase/revision-C/); physical validation pending |
 
 Canonical workspace: `C:\GIT\RoomTempHumidity`. Future tasks should read
 [AGENTS.md](AGENTS.md) and [migration notes](docs/MIGRATION.md).
@@ -74,7 +74,7 @@ build uses Debug after optimized builds failed a compiler diagnostic; warning an
 runtime compatibility checks were retained.
 
 The Pi application uses Python 3.11+, aiocoap, SQLite and HTML/CSS/JavaScript.
-Mechanical design uses parametric OpenSCAD, static dimension checks and independent
+Mechanical design uses parametric OpenSCAD (sensor) and CadQuery (base case), static dimension checks and independent
 STL topology checks. PCB work uses native KiCad schematic/layout, project-local
 libraries, ERC/DRC and independent manufacturing-file audits.
 
@@ -103,4 +103,5 @@ This is an engineering source snapshot, **not a turnkey OS image or production
 release**. Site-specific OTBR service/firewall/rollback files, full historical
 quotation archives and vendor 3D model bundles are omitted. See
 [dependency limits](docs/MIGRATION.md), [image provenance](docs/images/README.md)
-and [licensing notice](LICENSE-NOTICE.md). The base-unit enclosure remains paused.
+and [licensing notice](LICENSE-NOTICE.md). The base-unit enclosure Revision C digital design is complete; insert, cable,
+slicer and physical checks remain outstanding. See its [assembly and print checklist](BaseUnitCase/revision-C/CONFIRMED-HARDWARE-FIT.txt).

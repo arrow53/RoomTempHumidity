@@ -1,0 +1,215 @@
+{
+  "units": "mm",
+  "angle_above_horizontal_deg": 75.0,
+  "back_from_vertical_deg": 15.0,
+  "digital_only": true,
+  "printer": {
+    "model": "Bambu Lab H2D Pro, user confirmed",
+    "slicer_validation": "not performed"
+  },
+  "cabling": {
+    "external": "Pi USB-C power supply only",
+    "internal": "DK USB to Pi USB-A, with rear-cover service loop",
+    "power_exit_mm": [
+      24,
+      12
+    ],
+    "power_exit_count": 1
+  },
+  "hardware_configuration": {
+    "computer": "Raspberry Pi 5 8GB",
+    "cooler": "none, user confirmed",
+    "radio": "nRF52840 DK PCA10056 revision 3.0.3",
+    "board_marking": "2026.21, reported by user; not interpreted as a revision",
+    "hardware_fit_status": "digital checks only; actual cable plugs and inserts remain unconfirmed"
+  },
+  "parts": {
+    "front_bezel": {
+      "valid_brep": true,
+      "solids": 1,
+      "watertight_mesh": true,
+      "consistent_winding": true,
+      "triangles": 2080,
+      "bounds_mm": [
+        206.3200002,
+        137.24000020000005,
+        4.001056981197285
+      ],
+      "volume_mm3": 24118.620755698015
+    },
+    "vented_body": {
+      "valid_brep": true,
+      "solids": 1,
+      "watertight_mesh": true,
+      "consistent_winding": true,
+      "triangles": 9776,
+      "bounds_mm": [
+        206.32136779919642,
+        137.24000020000005,
+        116.00124347199679
+      ],
+      "volume_mm3": 269224.4600877951
+    },
+    "rear_cover_radio_mount": {
+      "valid_brep": true,
+      "solids": 1,
+      "watertight_mesh": true,
+      "consistent_winding": true,
+      "triangles": 5596,
+      "bounds_mm": [
+        206.32000020000004,
+        122.94000020000006,
+        27.001523208196048
+      ],
+      "volume_mm3": 72710.40997413339
+    },
+    "rear_cable_strip": {
+      "valid_brep": true,
+      "solids": 1,
+      "watertight_mesh": true,
+      "consistent_winding": true,
+      "triangles": 1044,
+      "bounds_mm": [
+        206.3200002,
+        14.000000200000056,
+        3.0010569811972827
+      ],
+      "volume_mm3": 8178.964783386752
+    },
+    "side_stand_print_two": {
+      "valid_brep": true,
+      "solids": 1,
+      "watertight_mesh": true,
+      "consistent_winding": true,
+      "triangles": 1036,
+      "bounds_mm": [
+        240.00000020000004,
+        115.91529446552893,
+        12.001367799196446
+      ],
+      "volume_mm3": 195584.35754192257
+    },
+    "fastener_coupon": {
+      "valid_brep": true,
+      "solids": 1,
+      "watertight_mesh": true,
+      "consistent_winding": true,
+      "triangles": 1556,
+      "bounds_mm": [
+        45.0000002,
+        24.000000200000002,
+        8.001367799196416
+      ],
+      "volume_mm3": 8216.426875984987
+    }
+  },
+  "assembly_intersections_mm3": {
+    "front_bezel / vented_body": 0.0,
+    "front_bezel / rear_cover_radio_mount": 0.0,
+    "front_bezel / rear_cable_strip": 0.0,
+    "front_bezel / stand_left": 0.0,
+    "front_bezel / stand_right": 0.0,
+    "vented_body / rear_cover_radio_mount": 0.0,
+    "vented_body / rear_cable_strip": 0.0,
+    "vented_body / stand_left": 0.0,
+    "vented_body / stand_right": 0.0,
+    "rear_cover_radio_mount / rear_cable_strip": 0.0,
+    "rear_cover_radio_mount / stand_left": 0.0,
+    "rear_cover_radio_mount / stand_right": 0.0,
+    "rear_cable_strip / stand_left": 0.0,
+    "rear_cable_strip / stand_right": 0.0,
+    "stand_left / stand_right": 0.0
+  },
+  "hardware_clearances": {
+    "display_glass / front_bezel": 0.0,
+    "display_glass / vented_body": 0.0,
+    "display_glass / rear_cover_radio_mount": 0.0,
+    "display_glass / rear_cable_strip": 0.0,
+    "display_rear_reserve / front_bezel": 0.0,
+    "display_rear_reserve / vented_body": 0.0,
+    "display_rear_reserve / rear_cover_radio_mount": 0.0,
+    "display_rear_reserve / rear_cable_strip": 0.0,
+    "pi_and_cooler_reserve / front_bezel": 0.0,
+    "pi_and_cooler_reserve / vented_body": 0.0,
+    "pi_and_cooler_reserve / rear_cover_radio_mount": 0.0,
+    "pi_and_cooler_reserve / rear_cable_strip": 0.0,
+    "radio_pcb_reserve / front_bezel": 0.0,
+    "radio_pcb_reserve / vented_body": 0.0,
+    "radio_pcb_reserve / rear_cover_radio_mount": 0.0,
+    "radio_pcb_reserve / rear_cable_strip": 0.0,
+    "radio_components_reserve / front_bezel": 0.0,
+    "radio_components_reserve / vented_body": 0.0,
+    "radio_components_reserve / rear_cover_radio_mount": 0.0,
+    "radio_components_reserve / rear_cable_strip": 0.0,
+    "radio_usb_service / front_bezel": 0.0,
+    "radio_usb_service / vented_body": 0.0,
+    "radio_usb_service / rear_cover_radio_mount": 0.0,
+    "radio_usb_service / rear_cable_strip": 0.0,
+    "pi_side_cable_lane / front_bezel": 0.0,
+    "pi_side_cable_lane / vented_body": 0.0,
+    "pi_side_cable_lane / rear_cover_radio_mount": 0.0,
+    "pi_side_cable_lane / rear_cable_strip": 0.0
+  },
+  "radio_underside_clear_except_mount_landing_zones": true,
+  "glass_pocket_side_clearance_mm": 0.5,
+  "padded_glass_stack_mm": {
+    "available": 2.2,
+    "nominal_glass": 0.7,
+    "front_pad": 0.5,
+    "rear_pad": 0.5,
+    "nominal_free": 0.5
+  },
+  "pi_radio_component_gap_mm": 19.400000000000006,
+  "antenna_to_display_rear_depth_gap_mm": 57.18000000000001,
+  "antenna_to_rear_plastic_mm": 4,
+  "radio_left_usb_straight_lane_mm": 35,
+  "case_lowest_desk_clearance_mm": 13.165257452389948,
+  "support_polygon_mm": [
+    [
+      -12.0,
+      -35.0
+    ],
+    [
+      218.32,
+      -35.0
+    ],
+    [
+      218.32,
+      205.0
+    ],
+    [
+      -12.0,
+      205.0
+    ]
+  ],
+  "maximum_print_part_xyz_mm": [
+    240.00000020000004,
+    137.24000020000005,
+    116.00124347199679
+  ],
+  "stability_estimate": {
+    "assumptions": "45% effective solid PETG; display 300g; bare Pi 50g estimate; DK45g; wires50g. Measure actual mass/COM. Pads friction untested.",
+    "mass_kg": 0.8824267690463957,
+    "com_xyz_mm": [
+      101.38115568810692,
+      85.11892839414558,
+      85.29379682812679
+    ],
+    "edge_margins_mm": [
+      113.38115568810692,
+      116.93884431189308,
+      120.11892839414558,
+      119.88107160585442
+    ],
+    "horizontal_tip_force_at_screen_top_N": 5.5275728092528045,
+    "screen_top_mm": 177.56366039991175,
+    "measured": false
+  },
+  "rear_cover_removal_clearance_sampled_mm": [
+    5,
+    15,
+    35,
+    60,
+    100
+  ]
+}

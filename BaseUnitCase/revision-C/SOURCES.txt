@@ -1,0 +1,114 @@
+REVISION C SOURCE RECORD - accessed 2026-10-11
+
+Official Raspberry Pi Touch Display 2 product brief, June 2026, 7-inch drawing:
+https://pip-assets.raspberrypi.com/categories/1083-raspberry-pi-touch-display-2/documents/RP-009106-MM-6-Raspberry%20Pi%20Touch%20Display%202%20product%20brief.pdf
+Glass outline 189.32 x 120.24 mm, corner R8, lens 0.7 mm, assembly rear extent
+14.92 mm from glass front. Drawing viewing opening 155 x 88; specification active
+area 154.56 x 86.94. Revision C screen rendering uses the latter. Native portrait
+720 x 1280 is landscape 1280 x 720 when rotated. Four Pi mounts use 58 x 49 mm
+centres; original supplied mounting is retained, not re-created by printed posts.
+The separate external display ears use a 140 x 70.71 pattern and are not used.
+Legacy cached official drawing was visually inspected and compared with the
+current official source. The enclosure supports straight outer glass edges.
+
+Official mounting / cable instructions:
+https://www.raspberrypi.com/documentation/accessories/touch-display-2.html
+Use supplied Standard-Mini 22-to-15-way FFC for Pi 5 and GPIO display power cable.
+
+Pi 5 official drawing:
+https://pip.raspberrypi.com/documents/RP-008347-DS-1-raspberry-pi-5-mechanical-drawing.pdf
+Board 85 x 56 mm; mounting centres 58 x 49, hole diameter 2.7 mm. Vendor explicitly
+calls dimensions approximate and unsuitable as production data. This design does
+not claim exact mounted port/component solids from that simplified drawing.
+
+Official active cooler drawing/product brief:
+https://pip.raspberrypi.com/documents/RP-008188-DS-raspberry-pi-active-cooler-product-brief.pdf
+Reference cooler footprint 63.5 x 42.5 mm, height 13.7 mm. USER CONFIRMED NO
+COOLER. This reference is retained only to explain the spare space; no fan or
+active cooling is installed or assumed for thermal qualification.
+
+Nordic official nRF52840 DK hardware archive 3.0.3:
+https://www.nordicsemi.com/Products/Development-hardware/nRF52840-DK/Download
+https://nsscprodmedia.blob.core.windows.net/prod/software-and-other-downloads/dev-kits/nrf52840-dk/nrf52840-development-kit---hardware-files-3_0_3.zip
+Read cached official PCA10056 3.0.3 production files 400236.GM1 and
+400236-RoundHoles.TXT and inspected 400236_Assembly_Drawing.pdf image.
+Gerber units INCH 2:4, x maximum 5.3750 inch = 136.525 mm (projection included),
+y maximum 2.5000 inch = 63.5 mm. Main body x max 5.2750 inch = 133.985 mm.
+Drill T08=0.1260 inch => 3.2004 mm. Selected centres from drill origin:
+X5500 Y3000 => 13.97, 7.62 mm
+X6000 Y22000 => 15.24, 55.88 mm
+X26000 Y5000 => 66.04, 12.70 mm
+Printed towers are only at these three holes. User confirmed nRF52840 DK
+revision 3.0.3 and additional marking 2026.21; the latter is recorded verbatim,
+not interpreted as a different revision. Official laminate specification p1
+states nominal ~1.6 mm; layer-stack sum 1.546 mm. Component-height reserves
+remain conservative allowances, not an exact component-by-component model.
+No vendor models/drawings/packages are redistributed in Revision C; links and
+our derived clearance solids are supplied. Review vendor rights before including
+those files in a public deliverable. Existing snapshots/notices were preserved.
+
+COORDINATES AND CLEARANCE CONTRACT
+Display-local x right, y up, z into rear. Front bezel plane z=0, body starts z=4,
+rear cover inner plane z=120, outer plane z=123. Desk transform:
+X=x; Y=30+cos(75deg)*y+sin(75deg)*z;
+Z=45+sin(75deg)*y-cos(75deg)*z.
+The top edge moves rearward as height increases. This explicitly replaces 45deg.
+
+Display glass x8.5..197.82, y8.5..128.74, z2.3..3.0.
+Rear display reserve x15.84..190.98, y18.265..117.975, z3.0..17.22.
+Pi/cooler reserve x38..165, y30..110, z17.22..55. This deliberately exceeds bare
+Pi footprint; it is not an assertion of an exact installed pose or all plug fit.
+No HAT or SSD allowance is promised. Actual hardware must fit entirely inside it.
+A separate 25 mm-wide left cable routing lane is reserved x13..38, y35..105,
+z25..63; local connector clearance and cable routing still need a real dry fit.
+Radio PCB lower-left x42,y40, z94.4..96.0. Components toward display: reserve
+20 mm, z74.4..94.4. Underside toward cover: reserve 20 mm, z96..116, with 4 mm
+additional space to cover apart from intended support towers. Towers 24 mm.
+Old Pi spare-envelope to radio component separation remains 19.4 mm. With
+the official bare Pi model at the documented mounting pose, actual model upper
+extent is z34.716 and separation to the radio reserve is 39.684 mm. There is no
+fan installed. Ventilation geometry does not establish passive thermal adequacy.
+Radio left USB total service reserve 35 mm, x7..42, y62..86, z77..95. For a
+turning cable this must be apportioned: <=25 mm projecting plug + ~10 mm bend
+allowance. J3 lower-edge route is now checked separately; see the fit report.
+Antenna-side keep-clear zone x157..178.525, y40..103.5, z74.4..116. It is a
+conservative last-21.525-mm board-region reservation, not a Nordic RF guarantee.
+No printed towers or added fasteners inside that zone. Keep user cables/metal
+outside it. Display-metal depth separation >=57.18 mm; PETG and rear vent ribs
+remain nearby, so RF must be checked in the actual enclosure. Do not paint the
+case with metallic/conductive coatings. DK components themselves are not removed
+from this reserved area. Our STEP proxies overlap one another intentionally;
+they are explanatory envelopes, not independent physical parts.
+
+RECOVERY
+Prototype A source and meshes were inspected in canonical snapshot-prototype-A.
+Unfinished B was not present in the migrated folder, so it was recovered read-only
+from the historical 2026-10-10 pi-display-enclosure outputs/revision-B folder into
+BaseUnitCase/snapshot-revision-B. Snapshot geometry is unchanged. Its checkpoint personal workspace path is redacted
+for publication; the PAUSED marker and failed foot-fit warning are retained. Do not execute it as current CAD.
+All active code, documentation and deliverables are in BaseUnitCase/revision-C.
+
+BARE PI MODEL FOLLOW-UP
+Official Raspberry Pi 5 STEP, accessed 2026-10-11 via official hardware docs:
+https://pip-assets.raspberrypi.com/categories/892-raspberry-pi-5/documents/RP-010083-CA-1-rpi-5%203D%20STEP%20-%20No%20Graphics%20small%20file.zip
+Model rpi-5b_no_graphics.step, 2689 solids; supplied MIT license and disclaimer
+reviewed. Vendor calls it guidance only and requires physical measurements.
+Downloaded references remain outside the repository; none redistributed.
+Preferred orientation has USB-A/RJ45 to the right and USB-C to the lower edge.
+Display drawing: portrait hole x=35.62/84.62 (49 span), y=75.34/133.34 (58 span).
+After landscape rotation and glass origin (8.5,8.5), mounting centres are
+x64.48/122.48 and y44.12/93.12. Pi model holes at x3.5/61.5,y3.5/52.5 give
+translation x60.98,y40.62. Model PCB underside z0.03 seats at display standoff
+z17.22, giving z17.19 translation. This is an explicit digital assembly pose;
+verify actual mounting orientation during dry fit. No Pi/display solid-vs-solid
+collision claim is made because only the Pi has a detailed vendor STEP here.
+
+DK ACCESS FOLLOW-UP
+Official 3.0.3 pick-place file gives J2 centre (3.318,31.75) mm, facing left;
+J3 (89.7293,4.9311) mm, facing down in this board-local orientation. Both are
+MicroUSB-B. Top and bottom assembly drawings inspected: battery holder is
+on underside; selected hole circles avoid its outline. Washer/tower contact
+zones visually clear, but exact component envelopes and solder fillets were
+not extracted; inspect real landing zones before tightening. No claim of exact
+3D component clearance on the DK. Hardware user confirmation does not remove
+the cable, inserts, print tolerance, thermal/RF or mechanical load-test gates.

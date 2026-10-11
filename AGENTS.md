@@ -4,7 +4,7 @@
 - Use SensorFirmware, SensorCase, SensorPCB, BaseUnitFirmware, BaseUnitApplication and BaseUnitCase. Shared explanatory assets belong in docs/.
 - SensorPCB/editable is current A3 native CAD; quote/DFM only. Never run older A2 generators over it.
 - SensorCase A2 retains prototype fit/RF/thermal limits until physical evidence supports changing them.
-- BaseUnitCase is PAUSED. Do not resume design without explicit user authorization.
+- BaseUnitCase/revision-C is the current user-authorized digital prototype. Historical A/B snapshots are preserved; Revision B remains unfinished. Physical fit, inserts, cable routing, slicing, thermal, RF and stability checks remain pending. Do not claim print qualification.
 - The working sensor prototype is an nRF54L15 DK. Do not imply custom-PCB qualification.
 - Install tools outside this repository. Use relative paths or explicit executable parameters.
 - Keep Thread datasets, PSKc/PSKd, join codes, private keys, live addresses, room mappings, logs and databases out of Git.

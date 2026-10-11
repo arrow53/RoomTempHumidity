@@ -1,0 +1,222 @@
+{
+  "hardware": {
+    "computer": "Raspberry Pi 5 8GB",
+    "cooler": "none, user confirmed",
+    "radio": "nRF52840 DK PCA10056 revision 3.0.3",
+    "board_marking": "2026.21, reported by user; not interpreted as a revision",
+    "hardware_fit_status": "digital checks only; actual cable plugs and inserts remain unconfirmed"
+  },
+  "radio_reference": {
+    "revision": "3.0.3",
+    "selected_holes_mm": [
+      [
+        13.97,
+        7.62
+      ],
+      [
+        15.24,
+        55.88
+      ],
+      [
+        66.04,
+        12.7
+      ]
+    ],
+    "nominal_hole_diameter_mm": 3.2004,
+    "outline_max_mm": [
+      136.525,
+      63.5
+    ],
+    "thickness_mm": 1.6,
+    "thickness_evidence": "400236_PCB_Laminate_Specification.pdf p1: nominal ~1.6mm, layer-stack sum 1.546mm",
+    "source_sha256": {
+      "Production files\\DRILL\\400236-RoundHoles.TXT": "a99d7c4e17f7c1300364dfaf4970be7ef94682fef7b5cb8907eb28659ff84b59",
+      "Production files\\GERBER\\400236.GM1": "6eebbd1fee6ed90d37afac9bbc7dd364df1853e870e54089065e51d88ad71db3",
+      "Production files\\ASSEMBLY\\400236_Assembly_Drawing.pdf": "aaf4cd6bc950261efaa8165d6a1574764dc929f8cc2961e0610790b4a501537f"
+    }
+  },
+  "radio_controls": {
+    "J2": {
+      "centre_board_mm": [
+        3.318,
+        31.75
+      ],
+      "access": "rear cover removed; component side faces display"
+    },
+    "J3": {
+      "centre_board_mm": [
+        89.7293,
+        4.9311
+      ],
+      "access": "rear cover removed; component side faces display"
+    },
+    "SW1": {
+      "centre_board_mm": [
+        105.6532,
+        13.8298
+      ],
+      "access": "rear cover removed; component side faces display"
+    },
+    "SW2": {
+      "centre_board_mm": [
+        115.9148,
+        13.8298
+      ],
+      "access": "rear cover removed; component side faces display"
+    },
+    "SW3": {
+      "centre_board_mm": [
+        105.6532,
+        4.5016
+      ],
+      "access": "rear cover removed; component side faces display"
+    },
+    "SW4": {
+      "centre_board_mm": [
+        115.9148,
+        4.5016
+      ],
+      "access": "rear cover removed; component side faces display"
+    },
+    "SW5": {
+      "centre_board_mm": [
+        77.2922,
+        4.5016
+      ],
+      "access": "rear cover removed; component side faces display"
+    },
+    "SW6": {
+      "centre_board_mm": [
+        104.3686,
+        57.9882
+      ],
+      "access": "rear cover removed; component side faces display"
+    },
+    "SW7": {
+      "centre_board_mm": [
+        82.55,
+        43.815
+      ],
+      "access": "rear cover removed; component side faces display"
+    },
+    "SW8": {
+      "centre_board_mm": [
+        5.5276,
+        5.3594
+      ],
+      "access": "rear cover removed; component side faces display"
+    },
+    "SW9": {
+      "centre_board_mm": [
+        23.749,
+        38.5064
+      ],
+      "access": "rear cover removed; component side faces display"
+    }
+  },
+  "bare_pi": {
+    "official_step_sha256": "78164070c1cc7ab854382950d2e85926c6e35432f1e5a146b733397a7c6afb44",
+    "source_solid_count": 2689,
+    "official_model_bounds_mm": [
+      -0.45000000000000007,
+      -1.6303501000002756,
+      -1.4499999656680005,
+      88.05000009999999,
+      56.0,
+      17.526000092034003
+    ],
+    "preferred_pose_translation_mm": [
+      60.98,
+      40.62,
+      17.19
+    ],
+    "mounted_bounds_mm": [
+      60.529999999999994,
+      38.98964989999972,
+      15.740000034332,
+      149.0300001,
+      96.62,
+      34.71600009203401
+    ],
+    "ports_orientation": "USB-A and Ethernet toward case right, USB-C toward case lower edge",
+    "radio_component_gap_mm": 39.683999907966,
+    "unused_depth_to_old_reserve_mm": 20.283999907965992,
+    "caveat": "Vendor model is guidance only. Original display mounting pose must match this ports-right orientation; FFC and actual plugs are not represented."
+  },
+  "case_intersection_volumes_mm3": {
+    "bare_pi_official_model_bounds / front_bezel": 0.0,
+    "bare_pi_official_model_bounds / vented_body": 0.0,
+    "bare_pi_official_model_bounds / rear_cover_radio_mount": 0.0,
+    "bare_pi_official_model_bounds / rear_cable_strip": 0.0,
+    "DK_J2_left_plug_25mm / front_bezel": 0.0,
+    "DK_J2_left_plug_25mm / vented_body": 0.0,
+    "DK_J2_left_plug_25mm / rear_cover_radio_mount": 0.0,
+    "DK_J2_left_plug_25mm / rear_cable_strip": 0.0,
+    "DK_J2_left_bend_allowance / front_bezel": 0.0,
+    "DK_J2_left_bend_allowance / vented_body": 0.0,
+    "DK_J2_left_bend_allowance / rear_cover_radio_mount": 0.0,
+    "DK_J2_left_bend_allowance / rear_cable_strip": 0.0,
+    "DK_J2_left_down_route / front_bezel": 0.0,
+    "DK_J2_left_down_route / vented_body": 0.0,
+    "DK_J2_left_down_route / rear_cover_radio_mount": 0.0,
+    "DK_J2_left_down_route / rear_cable_strip": 0.0,
+    "DK_J3_bottom_plug_25mm / front_bezel": 0.0,
+    "DK_J3_bottom_plug_25mm / vented_body": 0.0,
+    "DK_J3_bottom_plug_25mm / rear_cover_radio_mount": 0.0,
+    "DK_J3_bottom_plug_25mm / rear_cable_strip": 0.0,
+    "DK_J3_bottom_bend_allowance / front_bezel": 0.0,
+    "DK_J3_bottom_bend_allowance / vented_body": 0.0,
+    "DK_J3_bottom_bend_allowance / rear_cover_radio_mount": 0.0,
+    "DK_J3_bottom_bend_allowance / rear_cable_strip": 0.0,
+    "Pi_USB_C_lower_plug_25mm / front_bezel": 0.0,
+    "Pi_USB_C_lower_plug_25mm / vented_body": 0.0,
+    "Pi_USB_C_lower_plug_25mm / rear_cover_radio_mount": 0.0,
+    "Pi_USB_C_lower_plug_25mm / rear_cable_strip": 0.0,
+    "Pi_USB_C_bend_allowance / front_bezel": 0.0,
+    "Pi_USB_C_bend_allowance / vented_body": 0.0,
+    "Pi_USB_C_bend_allowance / rear_cover_radio_mount": 0.0,
+    "Pi_USB_C_bend_allowance / rear_cable_strip": 0.0,
+    "Pi_USB_A_right_plug_25mm / front_bezel": 0.0,
+    "Pi_USB_A_right_plug_25mm / vented_body": 0.0,
+    "Pi_USB_A_right_plug_25mm / rear_cover_radio_mount": 0.0,
+    "Pi_USB_A_right_plug_25mm / rear_cable_strip": 0.0,
+    "Pi_USB_A_right_bend_allowance / front_bezel": 0.0,
+    "Pi_USB_A_right_bend_allowance / vented_body": 0.0,
+    "Pi_USB_A_right_bend_allowance / rear_cover_radio_mount": 0.0,
+    "Pi_USB_A_right_bend_allowance / rear_cable_strip": 0.0
+  },
+  "ventilation": {
+    "lower_shell_slots": 54,
+    "upper_shell_slots": 54,
+    "nominal_open_area_each_upper_lower_mm2": 3726,
+    "rear_slots": 21,
+    "nominal_rear_vent_area_mm2": 1386,
+    "side_vents": "partially obscured by side supports; do not count toward minimum free area",
+    "cooler": "none",
+    "thermal_test": "not performed; passive operation must be monitored under intended load"
+  },
+  "fasteners": {
+    "insert_pilot_diameter_mm": 4.0,
+    "effective_blind_depth_mm": 6.1,
+    "insert_max_length_mm": 5.5,
+    "required_insert_confirmation": "Exact maker/part number with specified 4.0mm pilot and length <=5.5mm, then coupon test; M3 thread alone is insufficient. Common 5.7mm inserts are not approved by this current specification.",
+    "front_screws": "M3x8: nominal 4mm penetration, 2.1mm bottom clearance",
+    "rear_screws": "M3x8: nominal 5mm penetration, 1.1mm bottom clearance",
+    "DK_washers": "one under external screw head and one under component-side nut; NO washer between PCB and tower",
+    "DK_nuts": "M3 nylon; outer washer diameter <=6mm; check real landing zones"
+  },
+  "print_release": "HOLD full-case print until exact insert, H2D Pro slicer preview and actual USB plug/bend checks are confirmed. Coupon can be inspected/printed first with a correct printer profile.",
+  "cabling": {
+    "external": "Pi power only through single split exit",
+    "internal": "DK to Pi USB; actual service-loop sweep requires dry fit"
+  },
+  "printer": "Bambu Lab H2D Pro, user confirmed; slicer preview not performed",
+  "stl_sha256_unchanged": {
+    "fastener_coupon.stl": true,
+    "front_bezel.stl": true,
+    "rear_cable_strip.stl": true,
+    "rear_cover_radio_mount.stl": true,
+    "side_stand_print_two.stl": true,
+    "vented_body.stl": true
+  }
+}

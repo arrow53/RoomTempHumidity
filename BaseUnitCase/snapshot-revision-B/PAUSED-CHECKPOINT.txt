@@ -1,0 +1,69 @@
+PAUSED BY USER - 2026-10-10
+The user will work on the Raspberry Pi case later. Do not automatically resume
+or schedule follow-up work.
+
+REQUIREMENTS
+- SC1635 official 7-inch Touch Display 2; landscape assumed.
+- Display face at 45 degrees to the desk.
+- Fully enclosed case with a front display bezel.
+- Raspberry Pi 5 8GB mounted behind the display using its original standoffs.
+- nRF52840 DK also enclosed, provisionally mounted inside removable rear cover.
+- Printer wording: "hd2 pro bambu"; assumed Bambu Lab H2D Pro, not confirmed.
+- Do not interrupt the operational Pi, dashboard or room-sensor node.
+
+SAVED PROGRESS
+Prototype A remains preserved separately. It was an open-back stand and does
+not meet the later fully enclosed requirement.
+Revision B is unfinished and NOT READY TO PRINT OR INSTALL.
+Current provisional outer case: 206.32 x 137.24 x 113 mm.
+Continuous vented side shell, padded front bezel, removable rear radio mount,
+split rear cable strip, tall removable 45-degree feet.
+
+REVISION B FILES
+enclosed_case.py - editable parametric master, includes STL generation helpers.
+enclosed_case.scad - generated editable CSG / assembly preview.
+front_bezel.stl
+enclosed_body.stl
+rear_cover_radio_mount.stl
+rear_cable_strip.stl
+feet_45_print_two.stl - print TWO only after fit correction.
+fit_coupon.stl
+enclosed-preview.png - front/rear concept preview from actual meshes.
+mesh-checks.json - mesh closure, consistent winding, positive volume and bounds.
+
+UNFINISHED / KNOWN ISSUE
+The last analytic assembly check FAILED for stand_tab versus foot profile.
+Bezel perimeter, side walls and rear cover passed that same profile check.
+Do not assume the tab seats into the foot. Investigate and correct the profile
+or slot, then rerun the check before any printing. No correction was attempted
+after the pause instruction.
+The check aborted before producing layout-checks.json. Later checks in that
+script, including radio vent clearance and printer envelope, did NOT run.
+Source for this check is preserved as check_closed_layout.py alongside this
+checkpoint, but its root path must be adapted if run outside the workspace.
+
+Mesh topology checks passed for each saved B mesh; this does not establish
+assembly compatibility, exact hardware fit, printability, stability or strength.
+No slicer validation, print, load test, installed cable test, RF test, or thermal
+test has been performed. The B assembly instructions and fastener BOM are NOT
+finished. Prototype A instructions are not valid for assembling revision B.
+
+PENDING USER DETAILS
+- Pi cooler model/description; any HAT or SSD and actual stack height.
+- Nordic board's PCA number and printed revision. Assumed PCA10056/nRF52840 DK;
+  mounting centres come from official PCA10056 revision 3.0.3 hardware files.
+- Confirm printer really is Bambu Lab H2D Pro and landscape orientation.
+
+NEXT WORK ONLY WHEN THE USER RESUMES
+1. Resolve stand tab/foot collision using assembled geometry.
+2. Verify exact cooler and radio revision; update provisional hardware envelopes.
+3. Verify display rear mounting pose and USB/SD/power/FFC routing against actual
+   hardware. Current cable exits are generic, not verified connector cutouts.
+4. Check radio tower landing zones, battery holder, headers, antenna clearance.
+5. Finish B fastener BOM and assembly instructions, then rerun mesh/assembly
+   checks and inspect slicer previews. Clearly label untested physical fit.
+
+CANONICAL LOCATION REQUESTED
+C:\CodexTemp\pi-display-enclosure\outputs\revision-B
+Workspace copy:
+[historical personal workspace]/pi-display-enclosure/outputs/revision-B

@@ -1,0 +1,142 @@
+{
+  "front_bezel": {
+    "triangles": 804,
+    "bounds_mm": [
+      [
+        0,
+        206.32
+      ],
+      [
+        -16,
+        137.24
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "volume_mm3": 26478.93,
+    "closed_edges": true,
+    "consistent_winding": true
+  },
+  "enclosed_body": {
+    "triangles": 14464,
+    "bounds_mm": [
+      [
+        0,
+        206.32
+      ],
+      [
+        0,
+        137.24
+      ],
+      [
+        0,
+        106.0
+      ]
+    ],
+    "volume_mm3": 211150.04,
+    "closed_edges": true,
+    "consistent_winding": true
+  },
+  "rear_cover_radio_mount": {
+    "triangles": 5188,
+    "bounds_mm": [
+      [
+        0,
+        206.32
+      ],
+      [
+        12,
+        137.24
+      ],
+      [
+        0,
+        25.0
+      ]
+    ],
+    "volume_mm3": 75120.83,
+    "closed_edges": true,
+    "consistent_winding": true
+  },
+  "rear_cable_strip": {
+    "triangles": 204,
+    "bounds_mm": [
+      [
+        0,
+        206.32
+      ],
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "volume_mm3": 6566.16,
+    "closed_edges": true,
+    "consistent_winding": true
+  },
+  "feet_45_print_two": {
+    "triangles": 36,
+    "bounds_mm": [
+      [
+        -45,
+        150
+      ],
+      [
+        0,
+        100
+      ],
+      [
+        0,
+        12.6
+      ]
+    ],
+    "volume_mm3": 115867.06,
+    "closed_edges": true,
+    "consistent_winding": true
+  },
+  "fit_coupon": {
+    "triangles": 176,
+    "bounds_mm": [
+      [
+        0,
+        28
+      ],
+      [
+        0,
+        24
+      ],
+      [
+        0,
+        10
+      ]
+    ],
+    "volume_mm3": 4945.76,
+    "closed_edges": true,
+    "consistent_winding": true
+  },
+  "layout": {
+    "outer_case_mm": [
+      206.32,
+      137.24,
+      113.0
+    ],
+    "display_angle_deg": 45,
+    "display_outline_mm": [
+      189.32,
+      120.24
+    ],
+    "radio_pcb_front_surface_z": 86.4,
+    "radio_component_limit_assumed_z": 66.4,
+    "pi_envelope_limit_assumed_z": 55.0,
+    "provisional_board_component_gap_mm": 11.4,
+    "desk_clearance_at_lower_rear_mm": 20.096933725920124,
+    "printer_assumed": "Bambu Lab H2D Pro",
+    "cooler": "unconfirmed",
+    "radio_revision": "PCA10056 3.0.3 reference; user unit unconfirmed"
+  }
+}

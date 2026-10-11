@@ -1,0 +1,38 @@
+{
+  "front_bezel": {
+    "step_valid": true,
+    "stl_watertight": true,
+    "step_stl_volume_relative_error": 2.6382444752792046e-06
+  },
+  "vented_body": {
+    "step_valid": true,
+    "stl_watertight": true,
+    "step_stl_volume_relative_error": 2.0390028283726436e-06
+  },
+  "rear_cover_radio_mount": {
+    "step_valid": true,
+    "stl_watertight": true,
+    "step_stl_volume_relative_error": 8.303213974100857e-06
+  },
+  "rear_cable_strip": {
+    "step_valid": true,
+    "stl_watertight": true,
+    "step_stl_volume_relative_error": 2.79666428732867e-06
+  },
+  "side_stand_print_two": {
+    "step_valid": true,
+    "stl_watertight": true,
+    "step_stl_volume_relative_error": 7.449717896834293e-07
+  },
+  "fastener_coupon": {
+    "step_valid": true,
+    "stl_watertight": true,
+    "step_stl_volume_relative_error": 1.3664350743844287e-05
+  },
+  "assembled_step": {
+    "solid_count": 6,
+    "front_face_above_desk_deg": 74.99999999997246,
+    "leans_backward": true,
+    "valid": true
+  }
+}
