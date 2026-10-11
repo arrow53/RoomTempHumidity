@@ -1,0 +1,8 @@
+(version 1)
+# GCT USB4105 B4 published pad/peg pattern has 0.1751 mm nominal minimum.
+# This narrowly scoped 0.15 mm rule preserves the manufacturer lands and pegs.
+# Confirm finished NPTH registration/tolerances with fabricator before release.
+# All other hole-to-copper constraints retain their normal board setting.
+(rule "GCT_USB4105_published_pad_to_peg_geometry"
+  (condition "A.memberOfFootprint('J1') && B.memberOfFootprint('J1')")
+  (constraint hole_clearance (min 0.15mm)))

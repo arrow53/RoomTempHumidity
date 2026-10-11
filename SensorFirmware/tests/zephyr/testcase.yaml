@@ -1,0 +1,5 @@
+tests:
+  room_sensor.core:
+    tags: [room_sensor]
+    platform_allow: [native_sim, qemu_cortex_m3]
+    integration_platforms: [native_sim]

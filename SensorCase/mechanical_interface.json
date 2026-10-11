@@ -1,0 +1,343 @@
+{
+  "schema_version": 2,
+  "revision": "Enclosure A2 / PCB A1 routed provisional",
+  "status": "PROVISIONAL_CONCEPT_NOT_FIT_APPROVED",
+  "units": "mm",
+  "provenance": {
+    "handoff": "pcb_A1_handoff.md",
+    "interface": "pcb_A1_mechanical_interface.json",
+    "note": "Current routed PCB A1 snapshot. Outline, holes, USB, module and sensor positions unchanged. PCB handoff prose still refers to the older 14x8 opening; enclosure A2 independently enlarges it to 18x10 while preserving the connector location."
+  },
+  "coordinate_convention": {
+    "case": "Lower-left exterior back; X right, Y up, Z toward lid",
+    "pcb_source": "Upper-left; X right, Y down; Z above board top",
+    "pcb_underside_origin": [
+      11.4,
+      4.4,
+      6.4
+    ],
+    "pcb_top_view_to_case": "[11.4+x, 4.4+55-y, 8+z]"
+  },
+  "packaging_provisional": {
+    "pcb_envelope": [
+      45,
+      55,
+      1.6
+    ],
+    "case_body_and_lid": [
+      67.8,
+      71.8,
+      26
+    ],
+    "cable_tongue_additional_bottom_projection": 12,
+    "shelf_cradle_envelope": [
+      83.8,
+      50,
+      41
+    ],
+    "shelf_assembled_height": 104.8,
+    "component_top_bottom_reserve": [
+      6,
+      2
+    ],
+    "usb_opening_rectangle": [
+      18,
+      10
+    ],
+    "usb_opening_45_degree_roof_rise": 6,
+    "usb_opening_center_case_xz": [
+      33.9,
+      9.73
+    ],
+    "usb_mouth_center_case_xyz": [
+      33.9,
+      4.4,
+      9.73
+    ],
+    "usb_face_recess_from_exterior": 4.4,
+    "case_fastener_xy": [
+      [
+        6,
+        6
+      ],
+      [
+        61.8,
+        6
+      ],
+      [
+        6,
+        41.8
+      ],
+      [
+        61.8,
+        41.8
+      ]
+    ],
+    "wall_screw_seated_xy": [
+      [
+        6,
+        35
+      ],
+      [
+        61.8,
+        35
+      ]
+    ],
+    "usb_roof_flat_width": 6
+  },
+  "pcb_features_provisional": {
+    "holes_top_view": [
+      [
+        4,
+        18
+      ],
+      [
+        4,
+        49
+      ],
+      [
+        41,
+        49
+      ]
+    ],
+    "holes_local": [
+      [
+        4,
+        37
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        41,
+        6
+      ]
+    ],
+    "holes_case": [
+      [
+        15.4,
+        41.4
+      ],
+      [
+        15.4,
+        10.4
+      ],
+      [
+        52.4,
+        10.4
+      ]
+    ],
+    "hole_diameter": 2.7,
+    "boss_reserved_diameter": 6,
+    "supports_enabled": true,
+    "usb_part": "GCT USB4105-GF-A",
+    "usb_shell_envelope_case": {
+      "origin": [
+        29.43,
+        4.4,
+        8
+      ],
+      "size": [
+        8.94,
+        7.35,
+        3.31
+      ]
+    },
+    "module_part": "Raytac AN54LQ-P15",
+    "module_body_case": {
+      "origin": [
+        29.15,
+        45.7,
+        8
+      ],
+      "size": [
+        9.5,
+        13.7,
+        1.8
+      ]
+    },
+    "sensor_top_center_case": [
+      50.4,
+      21.4,
+      8.5
+    ],
+    "sensor_isolation_case_xy": {
+      "min": [
+        44.4,
+        14.4
+      ],
+      "max": [
+        55.9,
+        28.4
+      ]
+    },
+    "sensor_minimum_free_air": 2,
+    "sensor_vent_front_xy": {
+      "min": [
+        49.2,
+        15.4
+      ],
+      "envelope_size": [
+        7.2,
+        12
+      ]
+    },
+    "sensor_side_vent_region": {
+      "y": [
+        15.4,
+        27.4
+      ],
+      "z": [
+        8,
+        17.2
+      ]
+    },
+    "thermal_baffle_enabled": false,
+    "thermal_slots_routed": true,
+    "debug": "Removable lid; SWD DNP/pogo. Fitted header needs revised clearance.",
+    "thermal_slot_details": {
+      "left_x": 33,
+      "top_y": 31,
+      "bottom_y": 45,
+      "width": 1,
+      "implemented_as_edge_cuts": true,
+      "top_centerline": [
+        [
+          33.5,
+          35.5
+        ],
+        [
+          33.5,
+          31.5
+        ],
+        [
+          43.5,
+          31.5
+        ]
+      ],
+      "bottom_centerline": [
+        [
+          33.5,
+          40.5
+        ],
+        [
+          33.5,
+          44.5
+        ],
+        [
+          43.5,
+          44.5
+        ]
+      ],
+      "cap_radius": 0.5,
+      "corner_radius": 0.5,
+      "arc_polygon_step_degrees": 10,
+      "maximum_arc_chord_error": 0.002,
+      "left_trace_bridge_height": 4,
+      "right_edge_web_width": 1,
+      "slot_and_web_strength_validated": false
+    }
+  },
+  "rf_provisional": {
+    "reservation_case_xy": {
+      "min": [
+        11.4,
+        47.4
+      ],
+      "max": [
+        56.4,
+        59.4
+      ]
+    },
+    "reservation_visualization_case_z": [
+      0,
+      26
+    ],
+    "note": "Full-depth extrusion is an enclosure precaution, not a manufacturer Z rule. No metal/cable in reservation. Case bosses are additionally kept wholly below Y=47.4 across case width.",
+    "pcb_copper_keepout_local_y": [
+      51.7,
+      55
+    ],
+    "pcb_copper_keepout_case_y": [
+      56.1,
+      59.4
+    ],
+    "pcb_copper_source": "Raytac official v1.2 pp7-10",
+    "manufacturer_3d_antenna_keepout": null,
+    "manufacturer_plastic_spacing": null,
+    "antenna_review_confirmed": false
+  },
+  "remaining_inputs": {
+    "final_routed_board_step_and_tolerances": null,
+    "manufacturer_rf_3d_and_plastic_rules": null,
+    "usb_plug_overmold_cable_and_bend_radius": null,
+    "usb_insertion_check": "4.4 mm physical recess retained; A2 has an 18 x 10 mm body passage for a 16 x 8 mm plug-body budget. Conservative swept envelope checked to the connector face; actual cable mating still unverified.",
+    "mounting_hardware_lengths": "Prototype choice documented: PCB DIN965 M2.5x12, case DIN912 M2.5x8; seven DIN934 M2.5 nuts and seven DIN125A M2.5 washers. Physical tolerances and assembly torque still unverified.",
+    "sensor_slots_copper_and_thermal_review": "Routed A1 L slots received; whole X33..44.5,Y31..45 reserved. Physical strength and thermal response unverified.",
+    "fitted_debug_header_if_used": null,
+    "measured_thermal_and_rf_performance": null
+  },
+  "release_checks_pending": [
+    "PCB interface frozen and full routed component/STEP geometry reconciled",
+    "Manufacturer RF/plastic rules and assembled RF tests",
+    "Actual hardware/cable mating and tolerance stack",
+    "Printed nut roof/support/slot strength and lip fit",
+    "Slicing, fit coupon and prototype printing",
+    "Thermal bias and response",
+    "Wall and shelf mounting trials"
+  ],
+  "verification_scope": "See static and CAD reports; no physical, RF or thermal validation.",
+  "verification_completed": [
+    "59 static checks against routed PCB A1 snapshot",
+    "Five CGAL simple solids and five closed oriented connected STL meshes",
+    "Eleven nominal assembly/hardware/plug-gauge intersection checks",
+    "Native render visual review",
+    "19 parent A1/original artifacts preserved by SHA-256"
+  ],
+  "prototype_mounting": {
+    "authorized": true,
+    "fit_approved": false,
+    "pcb_boss_diameter": 6,
+    "pcb_support_height": 4,
+    "through_bore": 2.9,
+    "pcb_back_head_pocket": {
+      "diameter": 5.4,
+      "depth": 1.6
+    },
+    "pcb_screw": "3x DIN965 M2.5x12 overall length, 0.45 pitch",
+    "case_screw": "4x DIN912 M2.5x8 under-head length, 0.45 pitch",
+    "nuts": "7x DIN934 M2.5, 5 mm AF, 2 mm thick",
+    "washers": "7x DIN125A M2.5, 2.7 ID x 6 OD x 0.5",
+    "case_boss_diameter": 9.2,
+    "case_nut_pocket_af": 5.2,
+    "case_nut_pocket_depth": 2.2,
+    "case_nut_roof": 2,
+    "case_nuts_load_from": "inboard lateral slots",
+    "pcb_washer_nut_top_z": 10.5,
+    "pcb_screw_tip_z": 12,
+    "stand_front_guide_screw_relief_diameter": 7.2
+  },
+  "prototype_usb_access": {
+    "connector_unchanged": true,
+    "physical_face_recess": 4.4,
+    "aperture_rectangle": [
+      18,
+      10
+    ],
+    "roof_rise": 6,
+    "roof_bridge": 6,
+    "plug_body_budget": [
+      16,
+      8
+    ],
+    "sweep_clearance": 0.5,
+    "nominal_margin_each_side": 1,
+    "gct_B4_mated_body_gap_min": 1.85,
+    "gct_B4_plug_body_height_max": 6.5,
+    "note": "The 16x8 body is an enclosure gauge, not a selected or universal cable. Actual plug must meet connector drawing.",
+    "plug_body_length_budget": 20,
+    "insertion_travel_budget": 8,
+    "swept_gauge_to_shelf_bed_clearance": 4.05
+  }
+}

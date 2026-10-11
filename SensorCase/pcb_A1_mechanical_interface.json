@@ -1,0 +1,134 @@
+{
+  "revision": "A1-routed-provisional",
+  "status": "not_frozen_not_for_fabrication",
+  "units": "mm",
+  "coordinates": "component-side top view; upper-left origin; x right; y down; z above PCB top",
+  "board": {
+    "width": 45,
+    "height": 55,
+    "thickness": 1.6,
+    "corner_radius": 0
+  },
+  "holes": [
+    {
+      "x": 4,
+      "y": 18,
+      "drill": 2.7,
+      "type": "NPTH"
+    },
+    {
+      "x": 4,
+      "y": 49,
+      "drill": 2.7,
+      "type": "NPTH"
+    },
+    {
+      "x": 41,
+      "y": 49,
+      "drill": 2.7,
+      "type": "NPTH"
+    }
+  ],
+  "boss_reserved_diameter": 6,
+  "usb": {
+    "part": "GCT USB4105-GF-A",
+    "mouth_center_x": 22.5,
+    "mouth_y": 55,
+    "exit_direction": "+Y",
+    "shell_width": 8.94,
+    "height_above_board": 3.31,
+    "body_length": 7.35,
+    "mating_center_z": 1.73,
+    "aperture_not_frozen": true
+  },
+  "module": {
+    "part": "Raytac AN54LQ-P15",
+    "body_x": 17.75,
+    "body_y": 0,
+    "width": 9.5,
+    "length": 13.7,
+    "height": 1.8,
+    "placement_not_frozen": true,
+    "official_pad_pattern_pending": false,
+    "footprint_source_revision": "Raytac official v1.2 pp6-10 visually reviewed",
+    "latest_rf_annotations_pending": false
+  },
+  "rf_mechanical_reserve": {
+    "x0": 0,
+    "y0": 0,
+    "x1": 45,
+    "y1": 12,
+    "provisional": true,
+    "restriction": "provisional packaging reserve: no metal, cable, fastener or conductive coating; physical RF validation pending; not a manufacturer plastic-clearance claim"
+  },
+  "sensor": {
+    "part": "SHT40-AD1B-R3",
+    "x": 39,
+    "y": 38,
+    "body_width": 1.5,
+    "body_length": 1.5,
+    "body_height": 0.5,
+    "minimum_free_air_above": 2,
+    "vent_side": "right"
+  },
+  "sensor_slot_proposal": {
+    "left_x": 33,
+    "top_y": 31,
+    "bottom_y": 45,
+    "width": 1,
+    "implemented_as_edge_cuts": true,
+    "top_centerline": [
+      [
+        33.5,
+        35.5
+      ],
+      [
+        33.5,
+        31.5
+      ],
+      [
+        43.5,
+        31.5
+      ]
+    ],
+    "bottom_centerline": [
+      [
+        33.5,
+        40.5
+      ],
+      [
+        33.5,
+        44.5
+      ],
+      [
+        43.5,
+        44.5
+      ]
+    ],
+    "cap_radius": 0.5,
+    "corner_radius": 0.5,
+    "arc_polygon_step_degrees": 10,
+    "maximum_arc_chord_error": 0.002,
+    "left_trace_bridge_height": 4,
+    "right_edge_web_width": 1,
+    "slot_and_web_strength_validated": false
+  },
+  "maximum_component_height_reserve": 6,
+  "debug_header": {
+    "unpopulated_by_default": true,
+    "keep_lid_removable": true
+  },
+  "notes": [
+    "External outline, holes, USB and sensor positions unchanged; do not freeze physical fit until cable, fastener, slot strength and RF tests.",
+    "No metal inserts in the antenna band.",
+    "Use a dedicated vent path near sensor and isolate from regulator air."
+  ],
+  "rf_pcb_copper_keepout": {
+    "x0": 0,
+    "y0": 0,
+    "x1": 45,
+    "y1": 3.3,
+    "source": "Raytac official v1.2 pp7-10",
+    "latest_revision_review_pending": false
+  }
+}

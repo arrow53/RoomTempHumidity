@@ -1,0 +1,15 @@
+# Working instructions
+- Canonical workspace: C:\GIT\RoomTempHumidity. All future engineering work starts here.
+- C:\CodexTemp is an untouched legacy backup. Do not write there or depend on it at runtime.
+- Use SensorFirmware, SensorCase, SensorPCB, BaseUnitFirmware, BaseUnitApplication and BaseUnitCase. Shared explanatory assets belong in docs/.
+- SensorPCB/editable is current A3 native CAD; quote/DFM only. Never run older A2 generators over it.
+- SensorCase A2 retains prototype fit/RF/thermal limits until physical evidence supports changing them.
+- BaseUnitCase is PAUSED. Do not resume design without explicit user authorization.
+- The working sensor prototype is an nRF54L15 DK. Do not imply custom-PCB qualification or Matter support.
+- Install tools outside this repository. Use relative paths or explicit executable parameters.
+- Keep Thread datasets, PSKc/PSKd, join codes, private keys, live addresses, room mappings, logs and databases out of Git.
+- Never change the working Pi, radio firmware, services or firewall as a side effect of tests/documentation/publication.
+- Preserve licenses/notices. Vendor CAD/model packages require redistribution review.
+- Run dashboard unittest tests with loopback TCP/IPv6 UDP access. SensorFirmware/tools/run_host_tests.py runs schema and available host-C tests. SensorCase checks do not establish physical fit.
+- See docs/MIGRATION.md for source mapping and missing external dependencies. Do not silently return to legacy active paths.
+- Never invent a Git identity. User approved the existing account-level SSH key; use it only for this repository in the present task. Do not expand operations to other repositories.

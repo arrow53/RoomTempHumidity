@@ -1,0 +1,10 @@
+{
+  "description": "SYNTHETIC contract fixtures, not live sensor measurements. Reuse these events in collector integration tests.",
+  "events": [
+    {"label": "old_boot", "expected": "accept", "reading": {"schema_version":1,"node_id":"0123456789abcdef","boot_id":"000102030405060708090a0b0c0d0e0f","sequence":42,"uptime_s":3600,"temperature_c":21.375,"humidity_pct":46.5}},
+    {"label": "identical_retry", "expected": "idempotent", "reading": {"schema_version":1,"node_id":"0123456789abcdef","boot_id":"000102030405060708090a0b0c0d0e0f","sequence":42,"uptime_s":3600,"temperature_c":21.375,"humidity_pct":46.5}},
+    {"label": "new_boot_reset", "expected": "accept", "reading": {"schema_version":1,"node_id":"0123456789abcdef","boot_id":"101112131415161718191a1b1c1d1e1f","sequence":0,"uptime_s":1,"temperature_c":21.4,"humidity_pct":46.4}},
+    {"label": "old_boot_replay", "expected": "idempotent_do_not_replace_latest", "reading": {"schema_version":1,"node_id":"0123456789abcdef","boot_id":"000102030405060708090a0b0c0d0e0f","sequence":42,"uptime_s":3600,"temperature_c":21.375,"humidity_pct":46.5}},
+    {"label": "conflicting_retry", "expected": "reject_conflict", "reading": {"schema_version":1,"node_id":"0123456789abcdef","boot_id":"101112131415161718191a1b1c1d1e1f","sequence":0,"uptime_s":1,"temperature_c":99,"humidity_pct":46.4}}
+  ]
+}

@@ -1,0 +1,1108 @@
+[
+  {
+    "ref": "U1",
+    "sym": "AN54LQ_P15",
+    "value": "AN54LQ-P15",
+    "fp": "AN54LQ_P15_DRAFT",
+    "nets": {
+      "1": "GND",
+      "10": "GND",
+      "11": "+3V3",
+      "14": "GND",
+      "26": "GND",
+      "17": "I2C_SCL",
+      "18": "I2C_SDA",
+      "36": "SWDIO",
+      "37": "SWDCLK",
+      "39": "RESET_N"
+    },
+    "sch": [
+      276.86,
+      74.93
+    ],
+    "pcb": [
+      22.5,
+      6.85
+    ],
+    "mpn": "MD-240A8-002",
+    "source": "https://www.raytac.com/download/index.php?index_id=74",
+    "status": "Raytac v1.2 pinout, lands and antenna diagrams visually reviewed",
+    "note": "Internal LFRC and LDO configuration required. All omitted GPIO, DECD and DCC intentionally NC.",
+    "uuid": "194690d2-72b7-5df4-9b3f-0f5d13f92e3f",
+    "pins": [
+      [
+        "1",
+        "GND",
+        "power_in"
+      ],
+      [
+        "2",
+        "P1.09",
+        "bidirectional"
+      ],
+      [
+        "3",
+        "P1.10",
+        "bidirectional"
+      ],
+      [
+        "4",
+        "P1.11",
+        "bidirectional"
+      ],
+      [
+        "5",
+        "P1.12",
+        "bidirectional"
+      ],
+      [
+        "6",
+        "P1.13",
+        "bidirectional"
+      ],
+      [
+        "7",
+        "P1.14",
+        "bidirectional"
+      ],
+      [
+        "8",
+        "DECD",
+        "power_out"
+      ],
+      [
+        "9",
+        "DCC",
+        "power_out"
+      ],
+      [
+        "10",
+        "GND",
+        "power_in"
+      ],
+      [
+        "11",
+        "VDD_NRF",
+        "power_in"
+      ],
+      [
+        "12",
+        "P1.00_XL1",
+        "bidirectional"
+      ],
+      [
+        "13",
+        "P1.01_XL2",
+        "bidirectional"
+      ],
+      [
+        "14",
+        "GND",
+        "power_in"
+      ],
+      [
+        "15",
+        "P1.02_NFC1",
+        "bidirectional"
+      ],
+      [
+        "16",
+        "P1.03_NFC2",
+        "bidirectional"
+      ],
+      [
+        "17",
+        "P1.04",
+        "bidirectional"
+      ],
+      [
+        "18",
+        "P1.05",
+        "bidirectional"
+      ],
+      [
+        "19",
+        "P1.06",
+        "bidirectional"
+      ],
+      [
+        "20",
+        "P1.07",
+        "bidirectional"
+      ],
+      [
+        "21",
+        "P1.08",
+        "bidirectional"
+      ],
+      [
+        "22",
+        "P2.00",
+        "bidirectional"
+      ],
+      [
+        "23",
+        "P2.01",
+        "bidirectional"
+      ],
+      [
+        "24",
+        "P2.02",
+        "bidirectional"
+      ],
+      [
+        "25",
+        "P2.03",
+        "bidirectional"
+      ],
+      [
+        "26",
+        "GND",
+        "power_in"
+      ],
+      [
+        "27",
+        "P2.04",
+        "bidirectional"
+      ],
+      [
+        "28",
+        "P2.05",
+        "bidirectional"
+      ],
+      [
+        "29",
+        "P2.06",
+        "bidirectional"
+      ],
+      [
+        "30",
+        "P2.07",
+        "bidirectional"
+      ],
+      [
+        "31",
+        "P2.08",
+        "bidirectional"
+      ],
+      [
+        "32",
+        "P2.09",
+        "bidirectional"
+      ],
+      [
+        "33",
+        "P2.10",
+        "bidirectional"
+      ],
+      [
+        "34",
+        "P0.00",
+        "bidirectional"
+      ],
+      [
+        "35",
+        "P0.01",
+        "bidirectional"
+      ],
+      [
+        "36",
+        "SWDIO",
+        "bidirectional"
+      ],
+      [
+        "37",
+        "SWDCLK",
+        "input"
+      ],
+      [
+        "38",
+        "P0.03",
+        "bidirectional"
+      ],
+      [
+        "39",
+        "RESET_N",
+        "input"
+      ],
+      [
+        "40",
+        "P0.04",
+        "bidirectional"
+      ],
+      [
+        "41",
+        "P0.02",
+        "bidirectional"
+      ]
+    ]
+  },
+  {
+    "ref": "U2",
+    "sym": "SHT40",
+    "value": "SHT40-AD1B-R3",
+    "fp": "SHT40_DFN4",
+    "nets": {
+      "1": "I2C_SDA",
+      "2": "I2C_SCL",
+      "3": "+3V3",
+      "4": "GND"
+    },
+    "sch": [
+      276.86,
+      152.4
+    ],
+    "pcb": [
+      39.0,
+      38.0
+    ],
+    "mpn": "SHT40-AD1B-R3",
+    "source": "https://sensirion.com/media/documents/33FD6951/6A7C10A0/HT_DS_Datasheet_SHT4x_V7.3.pdf",
+    "status": "pins and land pattern reviewed",
+    "note": "No central copper pad. No heater during normal measurements.",
+    "uuid": "afb19a60-95da-5253-b2d7-a5069379d94d",
+    "pins": [
+      [
+        "1",
+        "SDA",
+        "bidirectional"
+      ],
+      [
+        "2",
+        "SCL",
+        "input"
+      ],
+      [
+        "3",
+        "VDD",
+        "power_in"
+      ],
+      [
+        "4",
+        "VSS",
+        "power_in"
+      ]
+    ]
+  },
+  {
+    "ref": "U3",
+    "sym": "LT1761_3V3",
+    "value": "LT1761-3.3",
+    "fp": "LT1761_TSOT23_5",
+    "nets": {
+      "1": "VBUS_FUSED",
+      "2": "GND",
+      "3": "VBUS_FUSED",
+      "5": "+3V3"
+    },
+    "sch": [
+      148.59,
+      62.230000000000004
+    ],
+    "pcb": [
+      11.0,
+      40.0
+    ],
+    "mpn": "LT1761IS5-3.3#TRMPBF",
+    "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/1761sff.pdf",
+    "status": "ADI fixed-voltage pinout and manufacturer TSOT-23 lands reviewed",
+    "note": "Fixed 3.3 V, 100 mA regulator with reverse-current protection. Design budget 50 mA total load; SHDN pin3 tied to IN, BYP pin4 intentionally open. No externally powered SWD target supply.",
+    "uuid": "58afc8bc-0864-5489-b037-c1c4cffd6f09",
+    "pins": [
+      [
+        "1",
+        "IN",
+        "power_in"
+      ],
+      [
+        "2",
+        "GND",
+        "power_in"
+      ],
+      [
+        "3",
+        "SHDN",
+        "input"
+      ],
+      [
+        "4",
+        "BYP",
+        "passive"
+      ],
+      [
+        "5",
+        "OUT",
+        "power_out"
+      ]
+    ]
+  },
+  {
+    "ref": "J1",
+    "sym": "USB4105",
+    "value": "USB4105-GF-A",
+    "fp": "USB4105_Custom",
+    "nets": {
+      "A1_B12": "GND",
+      "A4_B9": "VBUS_RAW",
+      "A5": "CC1",
+      "B5": "CC2",
+      "B4_A9": "VBUS_RAW",
+      "B1_A12": "GND",
+      "S1": "GND"
+    },
+    "sch": [
+      44.45,
+      60.96
+    ],
+    "pcb": [
+      22.5,
+      55.0
+    ],
+    "mpn": "USB4105-GF-A",
+    "source": "https://gct.co/files/drawings/usb4105.pdf",
+    "status": "drawing B4 reviewed; J1-specific 0.15 mm pad-to-NPTH rule",
+    "note": "Four common contact pairs use combined pad names; unused data/SBU NC.",
+    "uuid": "b424aadc-1ab6-5c47-82e1-122792020e16",
+    "pins": [
+      [
+        "A1_B12",
+        "GND",
+        "passive"
+      ],
+      [
+        "A4_B9",
+        "VBUS",
+        "passive"
+      ],
+      [
+        "B8",
+        "SBU2",
+        "passive"
+      ],
+      [
+        "A5",
+        "CC1",
+        "passive"
+      ],
+      [
+        "B7",
+        "D-",
+        "passive"
+      ],
+      [
+        "A6",
+        "D+",
+        "passive"
+      ],
+      [
+        "A7",
+        "D-",
+        "passive"
+      ],
+      [
+        "B6",
+        "D+",
+        "passive"
+      ],
+      [
+        "B5",
+        "CC2",
+        "passive"
+      ],
+      [
+        "A8",
+        "SBU1",
+        "passive"
+      ],
+      [
+        "B4_A9",
+        "VBUS",
+        "passive"
+      ],
+      [
+        "B1_A12",
+        "GND",
+        "passive"
+      ],
+      [
+        "S1",
+        "SHELL",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "F1",
+    "sym": "PTC",
+    "value": "200mA hold PTC",
+    "fp": "PTC_1812",
+    "nets": {
+      "1": "VBUS_RAW",
+      "2": "VBUS_FUSED"
+    },
+    "sch": [
+      97.79,
+      41.910000000000004
+    ],
+    "pcb": [
+      14.0,
+      47.0
+    ],
+    "mpn": "MF-MSMF020-2",
+    "source": "https://www.bourns.com/docs/product-datasheets/mfmsmf.pdf",
+    "status": "electrical table and Style 1 land pattern reviewed",
+    "note": "200 mA hold, 30 V; check temperature derating and voltage drop. Not a precise current limiter.",
+    "uuid": "2db32cc9-1801-599f-a8e6-91bb778dc65b",
+    "pins": [
+      [
+        "1",
+        "IN",
+        "passive"
+      ],
+      [
+        "2",
+        "OUT",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "D1",
+    "sym": "TPD1E10B06_DYA",
+    "value": "TPD1E10B06DYAR",
+    "fp": "SOD523",
+    "nets": {
+      "1": "VBUS_FUSED",
+      "2": "GND"
+    },
+    "sch": [
+      97.79,
+      76.2
+    ],
+    "pcb": [
+      11.9,
+      44.3
+    ],
+    "mpn": "TPD1E10B06DYAR",
+    "source": "https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf",
+    "status": "pins, clamp and DYA land pattern reviewed",
+    "note": "5.5 V standoff; max 14 V clamp at stated 5 A surge test. Verify ESD layout and inrush.",
+    "uuid": "967c37c9-3c31-5272-a9bc-d9afafcef1d2",
+    "pins": [
+      [
+        "1",
+        "IO",
+        "passive"
+      ],
+      [
+        "2",
+        "GND",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "U4",
+    "sym": "TPD2E2U06_DCK",
+    "value": "TPD2E2U06DCKR",
+    "fp": "SC70_3",
+    "nets": {
+      "1": "CC1",
+      "2": "CC2",
+      "3": "GND"
+    },
+    "sch": [
+      97.79,
+      110.49
+    ],
+    "pcb": [
+      22.5,
+      44.0
+    ],
+    "mpn": "TPD2E2U06DCKR",
+    "source": "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf",
+    "status": "pin table reviewed",
+    "note": "Place next to connector. CC1 and CC2 remain independent.",
+    "uuid": "54da3feb-0191-580d-aae1-466594b5f216",
+    "pins": [
+      [
+        "1",
+        "IO1",
+        "passive"
+      ],
+      [
+        "2",
+        "IO2",
+        "passive"
+      ],
+      [
+        "3",
+        "GND",
+        "power_in"
+      ]
+    ]
+  },
+  {
+    "ref": "R1",
+    "sym": "R",
+    "value": "5.1k 1%",
+    "fp": "R_0603",
+    "nets": {
+      "1": "CC1",
+      "2": "GND"
+    },
+    "sch": [
+      44.45,
+      113.03
+    ],
+    "pcb": [
+      26.0,
+      44.0
+    ],
+    "mpn": "RC0603FR-075K1L",
+    "source": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-075K1L",
+    "status": "YAGEO exact-part nominal ratings and package reviewed; assembly lands require approval",
+    "note": "USB-C Rd",
+    "uuid": "c3a14b1a-fa6a-5a85-8f0c-95a97427c1b7",
+    "pins": [
+      [
+        "1",
+        "1",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "R2",
+    "sym": "R",
+    "value": "5.1k 1%",
+    "fp": "R_0603",
+    "nets": {
+      "1": "CC2",
+      "2": "GND"
+    },
+    "sch": [
+      44.45,
+      138.43
+    ],
+    "pcb": [
+      29.0,
+      44.0
+    ],
+    "mpn": "RC0603FR-075K1L",
+    "source": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-075K1L",
+    "status": "YAGEO exact-part nominal ratings and package reviewed; assembly lands require approval",
+    "note": "USB-C Rd",
+    "uuid": "4a93984c-810d-5dc5-85c6-680ba8c479c9",
+    "pins": [
+      [
+        "1",
+        "1",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "C1",
+    "sym": "C",
+    "value": "2.2uF 25V X7R",
+    "fp": "C_0805",
+    "nets": {
+      "1": "VBUS_FUSED",
+      "2": "GND"
+    },
+    "sch": [
+      148.59,
+      96.52
+    ],
+    "pcb": [
+      7.0,
+      39.0
+    ],
+    "mpn": "C2012X7R1E225K125AB",
+    "source": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1E225K125AB",
+    "status": "TDK nominal ratings and reflow lands reviewed; effective capacitance qualification pending",
+    "note": "Check DC-bias effective capacitance. C1 >=1uF and C2 >=1uF effective.",
+    "uuid": "5c8ef8b8-a2a2-517c-ab4d-06a8d6f98692",
+    "pins": [
+      [
+        "1",
+        "1",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "C2",
+    "sym": "C",
+    "value": "4.7uF 10V X7R",
+    "fp": "C_0805",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      148.59,
+      125.73
+    ],
+    "pcb": [
+      15.0,
+      39.0
+    ],
+    "mpn": "C2012X7R1A475K125AC",
+    "source": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1A475K125AC",
+    "status": "TDK nominal ratings and reflow lands reviewed; effective capacitance qualification pending",
+    "note": "Check DC-bias effective capacitance. C1 >=1uF and C2 >=1uF effective.",
+    "uuid": "b7fa5e61-ee91-5c35-9196-31d08a5a2ac0",
+    "pins": [
+      [
+        "1",
+        "1",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "C3",
+    "sym": "C",
+    "value": "1uF 16V X7R",
+    "fp": "C_0603",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      219.71,
+      120.65
+    ],
+    "pcb": [
+      15.5,
+      12.6
+    ],
+    "mpn": "C1608X7R1C105K080AC",
+    "source": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1C105K080AC",
+    "status": "TDK nominal ratings and reflow lands reviewed; effective capacitance qualification pending",
+    "note": "Check DC-bias effective capacitance. C1 >=1uF and C2 >=1uF effective.",
+    "uuid": "3d078ba3-9351-52ef-aedc-f6b7ee485f33",
+    "pins": [
+      [
+        "1",
+        "1",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "C4",
+    "sym": "C",
+    "value": "100nF 50V X7R",
+    "fp": "C_0603",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      219.71,
+      147.32
+    ],
+    "pcb": [
+      15.5,
+      10.4
+    ],
+    "mpn": "C1608X7R1H104K080AA",
+    "source": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+    "status": "TDK nominal ratings and reflow lands reviewed; effective capacitance qualification pending",
+    "note": "Check DC-bias effective capacitance. C1 >=1uF and C2 >=1uF effective.",
+    "uuid": "c3dc6ac5-edcd-5604-9de4-191d319bf47d",
+    "pins": [
+      [
+        "1",
+        "1",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "C5",
+    "sym": "C",
+    "value": "100nF 50V X7R",
+    "fp": "C_0603",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      276.86,
+      185.42000000000002
+    ],
+    "pcb": [
+      39.0,
+      41.0
+    ],
+    "mpn": "C1608X7R1H104K080AA",
+    "source": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+    "status": "TDK nominal ratings and reflow lands reviewed; effective capacitance qualification pending",
+    "note": "Check DC-bias effective capacitance. C1 >=1uF and C2 >=1uF effective.",
+    "uuid": "2ef4fe1b-d75c-5851-9b34-867766b5f440",
+    "pins": [
+      [
+        "1",
+        "1",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "R3",
+    "sym": "R",
+    "value": "10k 1%",
+    "fp": "R_0603",
+    "nets": {
+      "1": "+3V3",
+      "2": "I2C_SCL"
+    },
+    "sch": [
+      337.82,
+      138.43
+    ],
+    "pcb": [
+      30.0,
+      28.0
+    ],
+    "mpn": "RC0603FR-0710KL",
+    "source": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL",
+    "status": "YAGEO exact-part nominal ratings and package reviewed; assembly lands require approval",
+    "note": "100 kHz bus, <=100 pF target",
+    "uuid": "94423ebd-41a4-52f0-ad42-373f6ecd72ae",
+    "pins": [
+      [
+        "1",
+        "1",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "R4",
+    "sym": "R",
+    "value": "10k 1%",
+    "fp": "R_0603",
+    "nets": {
+      "1": "+3V3",
+      "2": "I2C_SDA"
+    },
+    "sch": [
+      337.82,
+      166.37
+    ],
+    "pcb": [
+      30.0,
+      31.0
+    ],
+    "mpn": "RC0603FR-0710KL",
+    "source": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL",
+    "status": "YAGEO exact-part nominal ratings and package reviewed; assembly lands require approval",
+    "note": "100 kHz bus, <=100 pF target",
+    "uuid": "a596e26c-756c-56be-b6df-5c75e7729c98",
+    "pins": [
+      [
+        "1",
+        "1",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "J2",
+    "sym": "SWD_10",
+    "value": "Cortex SWD 2x5 1.27",
+    "fp": "SWD_2x5_1p27",
+    "nets": {
+      "1": "+3V3",
+      "2": "SWDIO",
+      "3": "GND",
+      "4": "SWDCLK",
+      "5": "GND",
+      "9": "GND",
+      "10": "RESET_N"
+    },
+    "sch": [
+      337.82,
+      68.58
+    ],
+    "pcb": [
+      13.0,
+      26.0
+    ],
+    "mpn": "DNP: pogo or header selected later",
+    "source": "",
+    "status": "pad geometry generic; mating/header selection pending",
+    "note": "Pin 7 key, pins 6 and 8 NC. VTref is target sense only.",
+    "uuid": "48da90e5-0b67-54d5-a343-d24faf76c92c",
+    "pins": [
+      [
+        "1",
+        "VTREF",
+        "passive"
+      ],
+      [
+        "2",
+        "SWDIO",
+        "passive"
+      ],
+      [
+        "3",
+        "GND",
+        "passive"
+      ],
+      [
+        "4",
+        "SWDCLK",
+        "passive"
+      ],
+      [
+        "5",
+        "GND",
+        "passive"
+      ],
+      [
+        "6",
+        "SWO_NC",
+        "passive"
+      ],
+      [
+        "7",
+        "KEY_NC",
+        "passive"
+      ],
+      [
+        "8",
+        "NC",
+        "passive"
+      ],
+      [
+        "9",
+        "GND_DETECT",
+        "passive"
+      ],
+      [
+        "10",
+        "RESET_N",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "TP1",
+    "sym": "TestPoint",
+    "value": "GND",
+    "fp": "TestPoint_1mm",
+    "nets": {
+      "1": "GND"
+    },
+    "sch": [
+      44.45,
+      187.96
+    ],
+    "pcb": [
+      7.0,
+      32.0
+    ],
+    "mpn": "PCB copper feature",
+    "source": "",
+    "status": "not a purchased part",
+    "note": "",
+    "uuid": "4377f987-cc30-5e7f-9d14-035a873eeadb",
+    "pins": [
+      [
+        "1",
+        "TEST",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "TP2",
+    "sym": "TestPoint",
+    "value": "+3V3",
+    "fp": "TestPoint_1mm",
+    "nets": {
+      "1": "+3V3"
+    },
+    "sch": [
+      91.44,
+      187.96
+    ],
+    "pcb": [
+      11.0,
+      32.0
+    ],
+    "mpn": "PCB copper feature",
+    "source": "",
+    "status": "not a purchased part",
+    "note": "",
+    "uuid": "2e92fb5a-0e1f-5894-baea-2d4285862102",
+    "pins": [
+      [
+        "1",
+        "TEST",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "TP3",
+    "sym": "TestPoint",
+    "value": "RESET_N",
+    "fp": "TestPoint_1mm",
+    "nets": {
+      "1": "RESET_N"
+    },
+    "sch": [
+      138.43,
+      187.96
+    ],
+    "pcb": [
+      15.0,
+      32.0
+    ],
+    "mpn": "PCB copper feature",
+    "source": "",
+    "status": "not a purchased part",
+    "note": "",
+    "uuid": "efea7b11-a2ab-5fa4-8b73-0f96a0bd5837",
+    "pins": [
+      [
+        "1",
+        "TEST",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "TP4",
+    "sym": "TestPoint",
+    "value": "VBUS_FUSED",
+    "fp": "TestPoint_1mm",
+    "nets": {
+      "1": "VBUS_FUSED"
+    },
+    "sch": [
+      185.42000000000002,
+      187.96
+    ],
+    "pcb": [
+      19.0,
+      32.0
+    ],
+    "mpn": "PCB copper feature",
+    "source": "",
+    "status": "not a purchased part",
+    "note": "",
+    "uuid": "b1bf3413-126a-5271-b64e-0b96279bb182",
+    "pins": [
+      [
+        "1",
+        "TEST",
+        "passive"
+      ]
+    ]
+  },
+  {
+    "ref": "#FLG01",
+    "sym": "PowerFlag",
+    "value": "PWR_FLAG",
+    "fp": "",
+    "nets": {
+      "1": "VBUS_FUSED"
+    },
+    "sch": [
+      44.45,
+      214.63
+    ],
+    "pcb": null,
+    "mpn": "",
+    "source": "",
+    "status": "",
+    "note": "",
+    "uuid": "24ee2d1a-86ed-5a7c-a23e-dae76a485af1",
+    "pins": [
+      [
+        "1",
+        "PWR",
+        "power_out"
+      ]
+    ]
+  },
+  {
+    "ref": "#FLG02",
+    "sym": "PowerFlag",
+    "value": "PWR_FLAG",
+    "fp": "",
+    "nets": {
+      "1": "GND"
+    },
+    "sch": [
+      91.44,
+      214.63
+    ],
+    "pcb": null,
+    "mpn": "",
+    "source": "",
+    "status": "",
+    "note": "",
+    "uuid": "ab6555c4-e1c1-5e01-a522-5469c1d86517",
+    "pins": [
+      [
+        "1",
+        "PWR",
+        "power_out"
+      ]
+    ]
+  }
+]

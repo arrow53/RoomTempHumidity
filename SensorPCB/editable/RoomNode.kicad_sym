@@ -1,0 +1,367 @@
+(kicad_symbol_lib
+	(version
+		20231120)
+	(generator
+		"kicad_symbol_editor")
+	(symbol
+		"AN54LQ_P15"
+		(pin_names
+			(offset 0.5))
+		(in_bom
+			yes)
+		(on_board
+			yes)
+		(property
+			"Reference"
+			"U"
+			(at 0 30.94 0)
+			(effects (font (size 1 1))))
+		(property
+			"Value"
+			"AN54LQ_P15"
+			(at 0 28.94 0)
+			(effects (font (size 1 1))))
+		(symbol
+			"AN54LQ_P15_0_1"
+			(rectangle (start -7.62 27.94) (end 7.62 -27.94) (stroke (width 0.254) (type default)) (fill (type background))))
+		(symbol
+			"AN54LQ_P15_1_1"
+			(pin power_in line (at -10.16 25.4 0) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 22.86 0) (length 2.54) (name "P1.09" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 20.32 0) (length 2.54) (name "P1.10" (effects (font (size 0.9 0.9)))) (number "3" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 17.78 0) (length 2.54) (name "P1.11" (effects (font (size 0.9 0.9)))) (number "4" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 15.24 0) (length 2.54) (name "P1.12" (effects (font (size 0.9 0.9)))) (number "5" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 12.7 0) (length 2.54) (name "P1.13" (effects (font (size 0.9 0.9)))) (number "6" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 10.16 0) (length 2.54) (name "P1.14" (effects (font (size 0.9 0.9)))) (number "7" (effects (font (size 0.9 0.9)))))
+			(pin power_out line (at -10.16 7.62 0) (length 2.54) (name "DECD" (effects (font (size 0.9 0.9)))) (number "8" (effects (font (size 0.9 0.9)))))
+			(pin power_out line (at -10.16 5.08 0) (length 2.54) (name "DCC" (effects (font (size 0.9 0.9)))) (number "9" (effects (font (size 0.9 0.9)))))
+			(pin power_in line (at -10.16 2.54 0) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "10" (effects (font (size 0.9 0.9)))))
+			(pin power_in line (at -10.16 0 0) (length 2.54) (name "VDD_NRF" (effects (font (size 0.9 0.9)))) (number "11" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 -2.54 0) (length 2.54) (name "P1.00_XL1" (effects (font (size 0.9 0.9)))) (number "12" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 -5.08 0) (length 2.54) (name "P1.01_XL2" (effects (font (size 0.9 0.9)))) (number "13" (effects (font (size 0.9 0.9)))))
+			(pin power_in line (at -10.16 -7.62 0) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "14" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 -10.16 0) (length 2.54) (name "P1.02_NFC1" (effects (font (size 0.9 0.9)))) (number "15" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 -12.7 0) (length 2.54) (name "P1.03_NFC2" (effects (font (size 0.9 0.9)))) (number "16" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 -15.24 0) (length 2.54) (name "P1.04" (effects (font (size 0.9 0.9)))) (number "17" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 -17.78 0) (length 2.54) (name "P1.05" (effects (font (size 0.9 0.9)))) (number "18" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 -20.32 0) (length 2.54) (name "P1.06" (effects (font (size 0.9 0.9)))) (number "19" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 -22.86 0) (length 2.54) (name "P1.07" (effects (font (size 0.9 0.9)))) (number "20" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at -10.16 -25.4 0) (length 2.54) (name "P1.08" (effects (font (size 0.9 0.9)))) (number "21" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 25.4 180) (length 2.54) (name "P2.00" (effects (font (size 0.9 0.9)))) (number "22" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 22.86 180) (length 2.54) (name "P2.01" (effects (font (size 0.9 0.9)))) (number "23" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 20.32 180) (length 2.54) (name "P2.02" (effects (font (size 0.9 0.9)))) (number "24" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 17.78 180) (length 2.54) (name "P2.03" (effects (font (size 0.9 0.9)))) (number "25" (effects (font (size 0.9 0.9)))))
+			(pin power_in line (at 10.16 15.24 180) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "26" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 12.7 180) (length 2.54) (name "P2.04" (effects (font (size 0.9 0.9)))) (number "27" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 10.16 180) (length 2.54) (name "P2.05" (effects (font (size 0.9 0.9)))) (number "28" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 7.62 180) (length 2.54) (name "P2.06" (effects (font (size 0.9 0.9)))) (number "29" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 5.08 180) (length 2.54) (name "P2.07" (effects (font (size 0.9 0.9)))) (number "30" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 2.54 180) (length 2.54) (name "P2.08" (effects (font (size 0.9 0.9)))) (number "31" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 0 180) (length 2.54) (name "P2.09" (effects (font (size 0.9 0.9)))) (number "32" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 -2.54 180) (length 2.54) (name "P2.10" (effects (font (size 0.9 0.9)))) (number "33" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 -5.08 180) (length 2.54) (name "P0.00" (effects (font (size 0.9 0.9)))) (number "34" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 -7.62 180) (length 2.54) (name "P0.01" (effects (font (size 0.9 0.9)))) (number "35" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 -10.16 180) (length 2.54) (name "SWDIO" (effects (font (size 0.9 0.9)))) (number "36" (effects (font (size 0.9 0.9)))))
+			(pin input line (at 10.16 -12.7 180) (length 2.54) (name "SWDCLK" (effects (font (size 0.9 0.9)))) (number "37" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 -15.24 180) (length 2.54) (name "P0.03" (effects (font (size 0.9 0.9)))) (number "38" (effects (font (size 0.9 0.9)))))
+			(pin input line (at 10.16 -17.78 180) (length 2.54) (name "RESET_N" (effects (font (size 0.9 0.9)))) (number "39" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 -20.32 180) (length 2.54) (name "P0.04" (effects (font (size 0.9 0.9)))) (number "40" (effects (font (size 0.9 0.9)))))
+			(pin bidirectional line (at 10.16 -22.86 180) (length 2.54) (name "P0.02" (effects (font (size 0.9 0.9)))) (number "41" (effects (font (size 0.9 0.9)))))))
+	(symbol
+		"SHT40"
+		(pin_names
+			(offset 0.5))
+		(in_bom
+			yes)
+		(on_board
+			yes)
+		(property
+			"Reference"
+			"U"
+			(at 0 6.81 0)
+			(effects (font (size 1 1))))
+		(property
+			"Value"
+			"SHT40"
+			(at 0 4.81 0)
+			(effects (font (size 1 1))))
+		(symbol
+			"SHT40_0_1"
+			(rectangle (start -5.08 3.81) (end 5.08 -3.81) (stroke (width 0.254) (type default)) (fill (type background))))
+		(symbol
+			"SHT40_1_1"
+			(pin bidirectional line (at -7.62 1.27 0) (length 2.54) (name "SDA" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.9 0.9)))))
+			(pin input line (at -7.62 -1.27 0) (length 2.54) (name "SCL" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.9 0.9)))))
+			(pin power_in line (at 7.62 1.27 180) (length 2.54) (name "VDD" (effects (font (size 0.9 0.9)))) (number "3" (effects (font (size 0.9 0.9)))))
+			(pin power_in line (at 7.62 -1.27 180) (length 2.54) (name "VSS" (effects (font (size 0.9 0.9)))) (number "4" (effects (font (size 0.9 0.9)))))))
+	(symbol
+		"LT1761_3V3"
+		(pin_names
+			(offset 0.5))
+		(in_bom
+			yes)
+		(on_board
+			yes)
+		(property
+			"Reference"
+			"U"
+			(at 0 8.08 0)
+			(effects (font (size 1 1))))
+		(property
+			"Value"
+			"LT1761-3.3"
+			(at 0 6.08 0)
+			(effects (font (size 1 1))))
+		(symbol
+			"LT1761_3V3_0_1"
+			(rectangle (start -5.08 5.08) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type background))))
+		(symbol
+			"LT1761_3V3_1_1"
+			(pin power_in line (at -7.62 2.54 0) (length 2.54) (name "IN" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.9 0.9)))))
+			(pin power_in line (at -7.62 0 0) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.9 0.9)))))
+			(pin input line (at -7.62 -2.54 0) (length 2.54) (name "SHDN" (effects (font (size 0.9 0.9)))) (number "3" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 7.62 2.54 180) (length 2.54) (name "BYP" (effects (font (size 0.9 0.9)))) (number "4" (effects (font (size 0.9 0.9)))))
+			(pin power_out line (at 7.62 0 180) (length 2.54) (name "OUT" (effects (font (size 0.9 0.9)))) (number "5" (effects (font (size 0.9 0.9)))))))
+	(symbol
+		"USB4105"
+		(pin_names
+			(offset 0.5))
+		(in_bom
+			yes)
+		(on_board
+			yes)
+		(property
+			"Reference"
+			"U"
+			(at 0 13.16 0)
+			(effects (font (size 1 1))))
+		(property
+			"Value"
+			"USB4105"
+			(at 0 11.16 0)
+			(effects (font (size 1 1))))
+		(symbol
+			"USB4105_0_1"
+			(rectangle (start -7.62 10.16) (end 7.62 -10.16) (stroke (width 0.254) (type default)) (fill (type background))))
+		(symbol
+			"USB4105_1_1"
+			(pin passive line (at -10.16 7.62 0) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "A1_B12" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at -10.16 5.08 0) (length 2.54) (name "VBUS" (effects (font (size 0.9 0.9)))) (number "A4_B9" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at -10.16 2.54 0) (length 2.54) (name "SBU2" (effects (font (size 0.9 0.9)))) (number "B8" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at -10.16 0 0) (length 2.54) (name "CC1" (effects (font (size 0.9 0.9)))) (number "A5" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at -10.16 -2.54 0) (length 2.54) (name "D-" (effects (font (size 0.9 0.9)))) (number "B7" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at -10.16 -5.08 0) (length 2.54) (name "D+" (effects (font (size 0.9 0.9)))) (number "A6" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at -10.16 -7.62 0) (length 2.54) (name "D-" (effects (font (size 0.9 0.9)))) (number "A7" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 10.16 7.62 180) (length 2.54) (name "D+" (effects (font (size 0.9 0.9)))) (number "B6" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 10.16 5.08 180) (length 2.54) (name "CC2" (effects (font (size 0.9 0.9)))) (number "B5" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 10.16 2.54 180) (length 2.54) (name "SBU1" (effects (font (size 0.9 0.9)))) (number "A8" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 10.16 0 180) (length 2.54) (name "VBUS" (effects (font (size 0.9 0.9)))) (number "B4_A9" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 10.16 -2.54 180) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "B1_A12" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 10.16 -5.08 180) (length 2.54) (name "SHELL" (effects (font (size 0.9 0.9)))) (number "S1" (effects (font (size 0.9 0.9)))))))
+	(symbol
+		"R"
+		(pin_names
+			(offset 0.5))
+		(in_bom
+			yes)
+		(on_board
+			yes)
+		(property
+			"Reference"
+			"U"
+			(at 0 5.54 0)
+			(effects (font (size 1 1))))
+		(property
+			"Value"
+			"R"
+			(at 0 3.54 0)
+			(effects (font (size 1 1))))
+		(symbol
+			"R_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -2.54) (stroke (width 0.254) (type default)) (fill (type background))))
+		(symbol
+			"R_1_1"
+			(pin passive line (at -7.62 0 0) (length 2.54) (name "1" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 7.62 0 180) (length 2.54) (name "2" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.9 0.9)))))))
+	(symbol
+		"C"
+		(pin_names
+			(offset 0.5))
+		(in_bom
+			yes)
+		(on_board
+			yes)
+		(property
+			"Reference"
+			"U"
+			(at 0 5.54 0)
+			(effects (font (size 1 1))))
+		(property
+			"Value"
+			"C"
+			(at 0 3.54 0)
+			(effects (font (size 1 1))))
+		(symbol
+			"C_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -2.54) (stroke (width 0.254) (type default)) (fill (type background))))
+		(symbol
+			"C_1_1"
+			(pin passive line (at -7.62 0 0) (length 2.54) (name "1" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 7.62 0 180) (length 2.54) (name "2" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.9 0.9)))))))
+	(symbol
+		"PTC"
+		(pin_names
+			(offset 0.5))
+		(in_bom
+			yes)
+		(on_board
+			yes)
+		(property
+			"Reference"
+			"U"
+			(at 0 5.54 0)
+			(effects (font (size 1 1))))
+		(property
+			"Value"
+			"PTC"
+			(at 0 3.54 0)
+			(effects (font (size 1 1))))
+		(symbol
+			"PTC_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -2.54) (stroke (width 0.254) (type default)) (fill (type background))))
+		(symbol
+			"PTC_1_1"
+			(pin passive line (at -7.62 0 0) (length 2.54) (name "IN" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 7.62 0 180) (length 2.54) (name "OUT" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.9 0.9)))))))
+	(symbol
+		"TPD2E2U06_DCK"
+		(pin_names
+			(offset 0.5))
+		(in_bom
+			yes)
+		(on_board
+			yes)
+		(property
+			"Reference"
+			"U"
+			(at 0 6.81 0)
+			(effects (font (size 1 1))))
+		(property
+			"Value"
+			"TPD2E2U06_DCK"
+			(at 0 4.81 0)
+			(effects (font (size 1 1))))
+		(symbol
+			"TPD2E2U06_DCK_0_1"
+			(rectangle (start -5.08 3.81) (end 5.08 -3.81) (stroke (width 0.254) (type default)) (fill (type background))))
+		(symbol
+			"TPD2E2U06_DCK_1_1"
+			(pin passive line (at -7.62 1.27 0) (length 2.54) (name "IO1" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at -7.62 -1.27 0) (length 2.54) (name "IO2" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.9 0.9)))))
+			(pin power_in line (at 7.62 1.27 180) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "3" (effects (font (size 0.9 0.9)))))))
+	(symbol
+		"TPD1E10B06_DYA"
+		(pin_names
+			(offset 0.5))
+		(in_bom
+			yes)
+		(on_board
+			yes)
+		(property
+			"Reference"
+			"U"
+			(at 0 5.54 0)
+			(effects (font (size 1 1))))
+		(property
+			"Value"
+			"TPD1E10B06_DYA"
+			(at 0 3.54 0)
+			(effects (font (size 1 1))))
+		(symbol
+			"TPD1E10B06_DYA_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -2.54) (stroke (width 0.254) (type default)) (fill (type background))))
+		(symbol
+			"TPD1E10B06_DYA_1_1"
+			(pin passive line (at -7.62 0 0) (length 2.54) (name "IO" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 7.62 0 180) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.9 0.9)))))))
+	(symbol
+		"SWD_10"
+		(pin_names
+			(offset 0.5))
+		(in_bom
+			yes)
+		(on_board
+			yes)
+		(property
+			"Reference"
+			"U"
+			(at 0 10.62 0)
+			(effects (font (size 1 1))))
+		(property
+			"Value"
+			"SWD_10"
+			(at 0 8.62 0)
+			(effects (font (size 1 1))))
+		(symbol
+			"SWD_10_0_1"
+			(rectangle (start -5.08 7.62) (end 5.08 -7.62) (stroke (width 0.254) (type default)) (fill (type background))))
+		(symbol
+			"SWD_10_1_1"
+			(pin passive line (at -7.62 5.08 0) (length 2.54) (name "VTREF" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at -7.62 2.54 0) (length 2.54) (name "SWDIO" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at -7.62 0 0) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "3" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at -7.62 -2.54 0) (length 2.54) (name "SWDCLK" (effects (font (size 0.9 0.9)))) (number "4" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at -7.62 -5.08 0) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "5" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 7.62 5.08 180) (length 2.54) (name "SWO_NC" (effects (font (size 0.9 0.9)))) (number "6" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 7.62 2.54 180) (length 2.54) (name "KEY_NC" (effects (font (size 0.9 0.9)))) (number "7" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 7.62 0 180) (length 2.54) (name "NC" (effects (font (size 0.9 0.9)))) (number "8" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 7.62 -2.54 180) (length 2.54) (name "GND_DETECT" (effects (font (size 0.9 0.9)))) (number "9" (effects (font (size 0.9 0.9)))))
+			(pin passive line (at 7.62 -5.08 180) (length 2.54) (name "RESET_N" (effects (font (size 0.9 0.9)))) (number "10" (effects (font (size 0.9 0.9)))))))
+	(symbol
+		"TestPoint"
+		(pin_names
+			(offset 0.5))
+		(in_bom
+			yes)
+		(on_board
+			yes)
+		(property
+			"Reference"
+			"U"
+			(at 0 5.54 0)
+			(effects (font (size 1 1))))
+		(property
+			"Value"
+			"TestPoint"
+			(at 0 3.54 0)
+			(effects (font (size 1 1))))
+		(symbol
+			"TestPoint_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -2.54) (stroke (width 0.254) (type default)) (fill (type background))))
+		(symbol
+			"TestPoint_1_1"
+			(pin passive line (at -7.62 0 0) (length 2.54) (name "TEST" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.9 0.9)))))))
+	(symbol
+		"PowerFlag"
+		(pin_names
+			(offset 0.5))
+		(in_bom
+			yes)
+		(on_board
+			yes)
+		(property
+			"Reference"
+			"U"
+			(at 0 5.54 0)
+			(effects (font (size 1 1))))
+		(property
+			"Value"
+			"PowerFlag"
+			(at 0 3.54 0)
+			(effects (font (size 1 1))))
+		(symbol
+			"PowerFlag_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -2.54) (stroke (width 0.254) (type default)) (fill (type background))))
+		(symbol
+			"PowerFlag_1_1"
+			(pin power_out line (at -7.62 0 0) (length 2.54) (name "PWR" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.9 0.9))))))))

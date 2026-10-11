@@ -1,0 +1,31 @@
+id,check,nominal_mm,measured_mm,acceptance,notes
+setup,Printer material nozzle layer height scale,,,Same intended case process; 100 percent scale,Enter machine and process in notes
+N1,Actual nut across flats,5,,Record supplier part and measured size,
+N2,Actual nut thickness,2,,Record actual thickness,
+N3,Best freely removable nut pocket AF,5.2,,A2 pocket must admit and release actual nut without forcing,Compare 5.0 5.1 5.2 5.3 5.4
+P1,PCB boss height above inner floor,4,,Record deviation and flat seating,
+P2,PCB floor thickness,2.4,,Record actual thickness,
+P3,PCB through-bore,2.9,,M2.5 screw slides freely without damaging print,
+P4,Board dummy or actual FR4 thickness,1.6,,Measure before interpreting screw projection,Printed shim does not reproduce FR4 strength
+P5,PCB screw overall countersunk length,12,,Correct DIN965 head envelope and overall length,
+P6,Rear head proudness,0,,Flush or recessed; no rocking on flat surface,Positive means protruding
+P7,PCB screw projection beyond nut,1.5,,Full nut engagement and visible full thread; no bowing,Check full board component clearance later
+P8,PCB sample floor and boss damage,,,None after gentle assembly and removal,No torque qualification
+C1,Case side-loaded nut pocket AF,5.2,,Nut slides in without force and is restrained under screw load,
+C2,Case nut pocket depth,2.2,,Record sliding fit and bridge quality,
+C3,Nominal nut retaining roof thickness,2,,No sag obstruction splitting or crushing,
+C4,Lid mating gap,0,,Seats without force; screw does not bottom,
+C5,Lid screw under-head length,8,,Correct socket screw and washer,
+C6,Lid screw projection below nut,1.1,,Full engagement without bottoming or roof damage,
+U1,USB rectangular opening width,18,,Record actual clear width below roof shoulders,
+U2,USB rectangular opening height,10,,Record clear rectangular portion; excludes sloped roof,
+U3,USB top bridge width,6,,Record sag and obstruction,
+U4,Actual plug body width,16,,16 is enclosure budget; verify actual selected plug,Not a selected cable dimension
+U5,Actual plug body height,6.5,,Check actual connector mating profile; enclosure gauge was 8,Do not treat 8 as GCT mating approval
+U6,Actual plug body length,20,,20 is cradle-check budget; actual length and cable exit still needed,
+U7,Plug tip to body shoulder,,,Record actual dimension; full mating needs populated board,
+U8,Receptacle face datum behind exterior wall,4.4,,Preserve board position; notches are at 16.4 from tongue tip,
+U9,Actual shoulder gap at full mating,1.85,,At least drawing minimum; verify using actual receptacle,Not measurable as full mating with wall sample alone
+U10,Case mating axis above underside,9.73,,Check actual plug entry at this axis,
+U11,Cradle withdrawal and bend clearance,,,Check with full cradle and selected cable,Digital check used 8 removal travel and 4.05 bed clearance
+F1,Finished PCB thickness and hole fit,1.6,,Record actual populated board and manufacturing tolerance,Pending physical board

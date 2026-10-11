@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "RoomNode")(type "KiCad")(uri "${KIPRJMOD}/RoomNode.pretty")(options "")(descr "A1 project footprints; Raytac v1.2 reviewed; physical qualification pending")))

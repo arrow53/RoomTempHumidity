@@ -1,0 +1,16 @@
+# Example only. Not installed or enabled. Review paths and CoAP address on Pi.
+[Unit]
+Description=Local room temperature and humidity collector
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/room-monitor
+ExecStart=%h/room-monitor/.venv/bin/python -m room_monitor --mode live --http-host 127.0.0.1 --coap-host ::1
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target

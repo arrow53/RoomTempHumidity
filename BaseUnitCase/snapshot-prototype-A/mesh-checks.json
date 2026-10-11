@@ -1,0 +1,137 @@
+{
+  "frame": {
+    "triangles": 804,
+    "bounds_mm": [
+      [
+        0,
+        206.32
+      ],
+      [
+        -16,
+        137.24
+      ],
+      [
+        0,
+        6.0
+      ]
+    ],
+    "volume_mm3": 26478.93,
+    "closed_edges": true,
+    "consistent_winding": true
+  },
+  "retainer_bottom": {
+    "triangles": 100,
+    "bounds_mm": [
+      [
+        0,
+        206.32
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "volume_mm3": 6739.2,
+    "closed_edges": true,
+    "consistent_winding": true
+  },
+  "retainer_top": {
+    "triangles": 100,
+    "bounds_mm": [
+      [
+        0,
+        206.32
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "volume_mm3": 6739.2,
+    "closed_edges": true,
+    "consistent_winding": true
+  },
+  "foot_45_print_two": {
+    "triangles": 28,
+    "bounds_mm": [
+      [
+        -45,
+        150
+      ],
+      [
+        0,
+        45
+      ],
+      [
+        0,
+        12.6
+      ]
+    ],
+    "volume_mm3": 61306.35,
+    "closed_edges": true,
+    "consistent_winding": true
+  },
+  "radio_dock": {
+    "triangles": 1736,
+    "bounds_mm": [
+      [
+        0,
+        86
+      ],
+      [
+        0,
+        69.5
+      ],
+      [
+        0,
+        15
+      ]
+    ],
+    "volume_mm3": 14710.8,
+    "closed_edges": true,
+    "consistent_winding": true
+  },
+  "fit_coupon": {
+    "triangles": 176,
+    "bounds_mm": [
+      [
+        0,
+        28
+      ],
+      [
+        0,
+        24
+      ],
+      [
+        0,
+        10
+      ]
+    ],
+    "volume_mm3": 4945.76,
+    "closed_edges": true,
+    "consistent_winding": true
+  },
+  "parameters": {
+    "display_mm": [
+      189.32,
+      120.24
+    ],
+    "frame_mm": [
+      206.32,
+      137.24,
+      4.0
+    ],
+    "angle_deg": 45,
+    "slot_mm": 6.6,
+    "tab_mm": 6.0,
+    "DK_revision_reference": "PCA10056 3.0.3; user unit unconfirmed"
+  }
+}

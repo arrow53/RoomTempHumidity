@@ -1,0 +1,35 @@
+/* PROPOSED wiring, not an assertion about the user's attached hardware.
+ * P1.11 SDA / P1.12 SCL. Verify DK revision and matching I/O supply first.
+ * This application uses TWIM21 in the P1 peripheral/pin domain.
+ */
+#include <zephyr/dt-bindings/pinctrl/nrf-pinctrl.h>
+#include <zephyr/dt-bindings/i2c/i2c.h>
+
+&pinctrl {
+	room_i2c_default: room_i2c_default {
+		group1 {
+			psels = <NRF_PSEL(TWIM_SDA, 1, 11)>,
+				<NRF_PSEL(TWIM_SCL, 1, 12)>;
+		};
+	};
+	room_i2c_sleep: room_i2c_sleep {
+		group1 {
+			psels = <NRF_PSEL(TWIM_SDA, 1, 11)>,
+				<NRF_PSEL(TWIM_SCL, 1, 12)>;
+			low-power-enable;
+		};
+	};
+};
+
+&i2c21 {
+	status = "okay";
+	clock-frequency = <I2C_BITRATE_STANDARD>;
+	pinctrl-0 = <&room_i2c_default>;
+	pinctrl-1 = <&room_i2c_sleep>;
+	pinctrl-names = "default", "sleep";
+	room_sht40: sht40@44 {
+		compatible = "sensirion,sht4x";
+		reg = <0x44>;
+		repeatability = <2>;
+	};
+};

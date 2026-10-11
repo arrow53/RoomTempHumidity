@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Room sensor readings v1",
+  "description": "CoAP POST /readings JSON payload; timestamps and rooms are collector-owned.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "node_id", "boot_id", "sequence", "uptime_s", "temperature_c", "humidity_pct"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "node_id": {"type": "string", "pattern": "^[0-9a-f]{16}$"},
+    "boot_id": {"type": "string", "pattern": "^[0-9a-f]{32}$"},
+    "sequence": {"type": "integer", "minimum": 0, "maximum": 9007199254740991},
+    "uptime_s": {"type": "integer", "minimum": 0, "maximum": 9007199254740991},
+    "temperature_c": {"type": "number", "minimum": -40, "maximum": 125},
+    "humidity_pct": {"type": "number", "minimum": 0, "maximum": 100}
+  }
+}

@@ -1,0 +1,19 @@
+mainmenu "Room temperature and humidity node"
+source "Kconfig.zephyr"
+
+config ROOM_SAMPLE_INTERVAL_S
+	int "Sampling interval in seconds"
+	range 10 86400
+	default 60
+
+config ROOM_COLLECTOR_IPV6
+	string "Collector unicast IPv6 address (empty disables reporting)"
+	default ""
+	help
+	  Use a reachable ULA or global IPv6 literal, without brackets or zone.
+	  This is an address, not a Thread credential.
+
+config ROOM_COLLECTOR_PORT
+	int "Collector CoAP UDP port"
+	range 1 65535
+	default 5683

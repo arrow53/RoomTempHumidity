@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="960" viewBox="0 0 1500 960">
+<rect width="1500" height="960" fill="#f6f7f9"/>
+<text x="42" y="54" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#192b40">ROOM SENSOR / PROTOTYPE A2 - PCB A1</text>
+<text x="42" y="84" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#a55c00">PROVISIONAL DIMENSIONS  |  Source-derived schematic, not a CAD render or fabrication drawing</text>
+<text x="70" y="129" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#52667c">FRONT / INTERIOR OVERLAY</text>
+<text x="1030" y="129" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#52667c">SIDE SECTION / SHELF</text>
+<rect x="70" y="174" width="406.8" height="430.8" fill="#e1e6ec" stroke="#253348" stroke-width="2"/>
+<rect x="84.4" y="188.4" width="378" height="402" fill="#ffffff" stroke="#98a6b6" stroke-width="1"/>
+<rect x="138.4" y="248.4" width="270" height="330" fill="#e7f2ed" stroke="#569880" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="150.4" y="386.4" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#35745c">PCB A1 draft</text>
+<text x="150.4" y="411.4" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#35745c">45 x 55 mm</text>
+<rect x="138.4" y="248.4" width="270" height="72" fill="#fde5c7" stroke="#c27c27" stroke-width="1" stroke-dasharray="6 5"/>
+<text x="143.4" y="241.4" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#916425">12 mm RF reservation</text>
+<rect x="244.9" y="248.4" width="57" height="82.2" fill="#b7c4da" stroke="#556889" stroke-width="1"/>
+<rect x="336.4" y="434.4" width="69" height="84" fill="#e8dced" stroke="#9561a0" stroke-width="1" stroke-dasharray="6 5"/>
+<circle cx="162.4" cy="356.4" r="8.1" fill="#ffffff" stroke="#306cba"/>
+<circle cx="162.4" cy="542.4" r="8.1" fill="#ffffff" stroke="#306cba"/>
+<circle cx="384.4" cy="542.4" r="8.1" fill="#ffffff" stroke="#306cba"/>
+<rect x="365.2" y="440.4" width="14.4" height="72" fill="#498d96" stroke="none" stroke-width="1"/>
+<rect x="394" y="440.4" width="14.4" height="72" fill="#498d96" stroke="none" stroke-width="1"/>
+<circle cx="372.4" cy="476.4" r="5" fill="#073f55" stroke="#ffffff"/>
+<rect x="148" y="424.8" width="14.4" height="108" fill="#849db2" stroke="none" stroke-width="1"/>
+<rect x="176.8" y="424.8" width="14.4" height="108" fill="#849db2" stroke="none" stroke-width="1"/>
+<rect x="205.6" y="424.8" width="14.4" height="108" fill="#849db2" stroke="none" stroke-width="1"/>
+<circle cx="106" cy="568.8" r="8.7" fill="#efc274" stroke="#916425"/>
+<circle cx="106" cy="354" r="8.7" fill="#efc274" stroke="#916425"/>
+<circle cx="440.8" cy="568.8" r="8.7" fill="#efc274" stroke="#916425"/>
+<circle cx="440.8" cy="354" r="8.7" fill="#efc274" stroke="#916425"/>
+<line x1="320.8" y1="418.8" x2="462.4" y2="418.8" stroke="#9561a0" stroke-width="2" stroke-dasharray="6 5"/>
+<line x1="320.8" y1="534" x2="462.4" y2="534" stroke="#9561a0" stroke-width="2" stroke-dasharray="6 5"/>
+<line x1="320.8" y1="418.8" x2="320.8" y2="534" stroke="#9561a0" stroke-width="2" stroke-dasharray="6 5"/>
+<rect x="462.4" y="498" width="14.4" height="14.4" fill="#498d96" stroke="none" stroke-width="1"/>
+<rect x="462.4" y="469.2" width="14.4" height="14.4" fill="#498d96" stroke="none" stroke-width="1"/>
+<rect x="462.4" y="440.4" width="14.4" height="14.4" fill="#498d96" stroke="none" stroke-width="1"/>
+<rect x="201.4" y="604.8" width="144" height="72" fill="#d3dce6" stroke="#253348" stroke-width="1"/>
+<rect x="230.8" y="634.8" width="13.2" height="24" fill="#f6f7f9" stroke="#52667c" stroke-width="1"/>
+<rect x="302.8" y="634.8" width="13.2" height="24" fill="#f6f7f9" stroke="#52667c" stroke-width="1"/>
+<rect x="22" y="784.8" width="502.8" height="18" fill="#75889c" stroke="#253348" stroke-width="1"/>
+<rect x="70" y="604.8" width="66" height="180" fill="#a5b2c1" stroke="#253348" stroke-width="1"/>
+<rect x="70" y="556.8" width="66" height="48" fill="#a5b2c1" stroke="#253348" stroke-width="1"/>
+<rect x="410.8" y="604.8" width="66" height="180" fill="#a5b2c1" stroke="#253348" stroke-width="1"/>
+<rect x="410.8" y="556.8" width="66" height="48" fill="#a5b2c1" stroke="#253348" stroke-width="1"/>
+<line x1="70" y1="156" x2="476.8" y2="156" stroke="#506177" stroke-width="1"/>
+<line x1="70" y1="149" x2="70" y2="164" stroke="#506177" stroke-width="1"/>
+<line x1="476.8" y1="149" x2="476.8" y2="164" stroke="#506177" stroke-width="1"/>
+<text x="200" y="145" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#253348">67.8 mm</text>
+<line x1="47" y1="174" x2="47" y2="604.8" stroke="#506177" stroke-width="1"/>
+<line x1="40" y1="174" x2="56" y2="174" stroke="#506177" stroke-width="1"/>
+<line x1="40" y1="604.8" x2="56" y2="604.8" stroke="#506177" stroke-width="1"/>
+<text x="12" y="388" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#253348">71.8</text>
+<text x="12" y="408" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#253348">mm</text>
+<text x="145" y="828.8" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#253348">Cradle width 83.8 mm</text>
+<text x="565" y="197" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#236e79">Ambient sensor zone</text>
+<text x="565" y="228" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#253348">Front + right-side openings.</text>
+<text x="565" y="258" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#253348">SHT40 case XY = 50.4, 21.4 mm.</text>
+<line x1="382.4" y1="476.4" x2="540" y2="255" stroke="#498d96" stroke-width="1.5"/>
+<text x="565" y="322" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#86518f">Optional thermal baffle</text>
+<text x="565" y="353" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#253348">Dashed lines indicate a proposal.</text>
+<text x="565" y="383" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#253348">Clears island; stays disabled.</text>
+<text x="565" y="436" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#916425">Hardware stays provisional</text>
+<text x="565" y="467" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#253348">Gold: case screws. Blue: PCB holes.</text>
+<text x="565" y="497" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#253348">Orange: provisional 12 mm RF band.</text>
+<text x="565" y="527" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#253348">Manufacturer plastic rule pending.</text>
+<text x="565" y="587" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#415b77">USB and shelf clearance</text>
+<text x="565" y="618" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#253348">USB exits the bottom (-Y).</text>
+<text x="565" y="648" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#253348">18 x 10 mm plug-body passage.</text>
+<text x="565" y="678" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#253348">16 x 8 mm budget; actual cable TBD.</text>
+<text x="565" y="739" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#253348">Source checks only</text>
+<text x="565" y="770" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#253348">M2.5 through-bolt mounts: ON</text>
+<text x="565" y="800" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#a55c00">Fit / RF / thermal: NOT VERIFIED</text>
+<rect x="1060" y="174" width="156" height="430.8" fill="#e1e6ec" stroke="#253348" stroke-width="2"/>
+<rect x="1074.4" y="188.4" width="127.2" height="402" fill="#ffffff" stroke="#98a6b6" stroke-width="1"/>
+<rect x="1098.4" y="248.4" width="9.6" height="330" fill="#b8d9cb" stroke="#35745c" stroke-width="1"/>
+<rect x="1108" y="363.4" width="36" height="85" fill="none" stroke="#8698a9" stroke-width="1" stroke-dasharray="6 5"/>
+<text x="1238" y="202" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#253348">Front lid</text>
+<line x1="1209" y1="216" x2="1234" y2="204" stroke="#506177" stroke-width="1"/>
+<text x="1238" y="301" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#253348">PCB</text>
+<line x1="1103.2" y1="310" x2="1234" y2="300" stroke="#506177" stroke-width="1"/>
+<text x="1030" y="709" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#415b77">Center route stays open</text>
+<rect x="988" y="784.8" width="300" height="18" fill="#75889c" stroke="#253348" stroke-width="1"/>
+<rect x="1042" y="604.8" width="192" height="180" fill="none" stroke="#93a4b5" stroke-width="1" stroke-dasharray="6 5"/>
+<text x="1070" y="828.8" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#253348">Depth 50 mm</text>
+<line x1="1060" y1="156" x2="1216" y2="156" stroke="#506177" stroke-width="1"/>
+<line x1="1060" y1="149" x2="1060" y2="164" stroke="#506177" stroke-width="1"/>
+<line x1="1216" y1="149" x2="1216" y2="164" stroke="#506177" stroke-width="1"/>
+<text x="1104" y="145" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#253348">26 mm</text>
+<line x1="1356" y1="174" x2="1356" y2="802.8" stroke="#506177" stroke-width="1"/>
+<text x="1390" y="553" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#253348">104.8</text>
+<text x="1390" y="576" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#253348">mm total</text>
+<text x="42" y="914" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#a55c00">All dimensions are mm and adjustable. No PCB/module fit, antenna clearance, thermal performance, or printability is certified.</text>
+<text x="42" y="940" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#52667c">Source: sensor_enclosure.scad  |  Coordinate convention: X right, Y up, Z back-to-front  |  See mechanical_interface.json</text>
+</svg>

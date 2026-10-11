@@ -1,0 +1,5 @@
+# Copy to ignored local.conf and enter the collector's real reachable IPv6.
+# Empty keeps the node commissioned/routing but disables measurement delivery.
+CONFIG_ROOM_COLLECTOR_IPV6=""
+CONFIG_ROOM_COLLECTOR_PORT=5683
+CONFIG_ROOM_SAMPLE_INTERVAL_S=60

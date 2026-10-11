@@ -1,0 +1,154 @@
+SC1635 / Raspberry Pi 5 / PCA10056 desktop enclosure prototype
+Revision A, 2026-10-10. Display face is 45 degrees to the desk.
+
+STATUS
+Editable CAD and closed printable meshes are supplied. This is an open-back
+enclosure/stand prototype, not a physically validated production enclosure.
+User confirmed SC1635 and requested 45 degrees. Landscape is assumed.
+Radio assumed nRF52840 DK (PCA10056); exact PCB revision is still required.
+Cooler model, printer bed, and actual cable plugs remain unconfirmed.
+No running device, firmware, dashboard, or system configuration was changed.
+
+FILES / EDITING
+enclosure.py is the parametric master. Change parameters and run with Python 3
+to regenerate meshes, enclosure.scad and mesh-checks.json; no packages needed.
+The foot profile is explicitly constructed for 45 degrees. Changing ANGLE alone
+does NOT create different feet; redesign their polygon for another angle.
+enclosure.scad is editable OpenSCAD CSG. Set part="assembly" for the assembled
+preview, or select a named part. Python regenerating overwrites this SCAD file.
+STL dimensions are millimetres; import into the slicer at 100% scale.
+
+PRINT LIST AND ORIENTATION
+1 x frame.stl: front face on bed, tabs included. 206.32 x 153.24 x 6 mm.
+1 x retainer_bottom.stl and 1 x retainer_top.stl: flat on bed.
+2 x foot_45_print_two.stl: broad side on bed, 195 x 45 x 12.6 mm each.
+1 x radio_dock.stl: base on bed, towers upward, 86 x 69.5 x 15 mm.
+1 x fit_coupon.stl first: test 6.6 mm channel and 3.4 mm square screw hole.
+The square holes are intentional printable clearances, not threads.
+Recommended starting settings: PETG, 0.2 mm layers, 4 perimeters, 5 top/bottom
+layers, 25-35% infill. No intended supports. Inspect slicer layer preview.
+The frame needs a usable area at least 207 x 154 mm before brim or margins.
+A 220 x 220 mm bed is assumed, not confirmed. Do not scale to fit a small bed.
+Retainer span is also 206.32 mm. If bed is smaller, redesign split joints.
+
+PROPOSED FASTENER BOM (ONLY FASTENERS)
+4 x M3 x 12 mm machine screws, 4 x M3 nuts, 8 x M3 flat washers:
+  attach the two removable retainers to the frame, outside the glass outline.
+3 x M3 x 22 mm nylon machine screws, 3 x M3 nylon nuts,
+  6 x M3 nylon flat washers: attach DK to three printed towers.
+Reuse the original supplied M2.5 screws to attach Pi to display standoffs.
+Check engagement before tightening. No new display screw length is assumed.
+2 x small nylon cable ties for radio dock strain relief.
+Do not substitute long screws in the display's threaded standoffs.
+
+ASSEMBLY
+1. Print the coupon and check a 6 mm tab/flat sample in its 6.6 mm channel.
+   Check an M3 screw in the square hole. Adjust SLOT_CLEARANCE if required.
+2. Inspect/deburr the frame. Pad the FRONT glass-support lip and rear retainer
+   contact zones with thin nonconductive compliant tape, initially 0.5 mm each.
+   Padding and optional non-slip feet are assembly consumables, not in the
+   fastener BOM. Bare printed plastic must not press against the glass.
+3. At a planned maintenance shutdown, disconnect power before handling the Pi.
+   Preserve the current display/Pi wiring. Use the supplied display standoffs
+   and screws for the Pi; do not transfer its load to the ribbon cable.
+4. Lay the frame front down on a soft clean surface. Place display glass into
+   its 190.32 x 121.24 mm pocket. The front lip overlaps 3 mm at straight edges.
+   Do not force it. Glass corners are R8; this pocket deliberately does not
+   follow the corners and must support the straight bezel edges evenly.
+5. Fit bottom retainer at local y=0 and top at y=126.24, both starting z=4.
+   Tighten only until the retainer seats against the FRAME. Screws must never
+   clamp the glass. Front padding + glass + rear padding must fit in the
+   2.2 mm pocket depth (z=1.8 to 4); nominal 0.5+0.7+0.5=1.7 mm.
+   If glass rattles, adjust compliant padding, not screw force. Check that
+   rear retainers contact only the outer 3 mm of glass and no metalwork.
+6. Orient both feet with their long tails behind the display. Slide the two
+   6 mm-thick lower tabs into the slanted 6.6 mm slots. There is 16 mm tab
+   engagement in a 16.4 mm-deep slot. Feet are removable gravity-fit parts;
+   lift the assembly by its frame, not by one foot. Add non-slip underside pads.
+7. Mount radio using the three holes on the debugger half/centre, with USB
+   debugger connector to the left and antenna/SoC end overhanging the right.
+   Board lower-left is dock (3,3). Towers support PCB underside at z=15.
+   Check underside battery holder and solder tails have clearance FIRST.
+   Never pull the PCB down over an underside component with the mounting screws.
+8. Keep the radio separate, antenna end toward free space. Start at least
+   50 mm from display metalwork, Pi, cables and metal desk objects. This is a
+   conservative layout target, NOT a Nordic guaranteed RF clearance rule.
+   Use nonmetal fasteners. No printed material extends under the antenna end.
+9. Use dock tie slots for USB strain relief: capture the insulated cable with
+   a loose service loop, never a connector or PCB. Secure Pi power cable to a
+   foot using a removable tie around its body, without covering the SD/ports.
+   Keep a pull-free service loop. No cables should carry the assembly weight.
+
+CLEARANCE / ENGINEERING CHECKS
+Verified from official drawing: 7-inch glass outline 189.32 x 120.24, R8;
+0.7 mm lens, rear assembly up to 14.92 mm. Viewing aperture is 155 x 88.
+Prototype front opening 184.32 x 115.24; centred aperture has approximately
+14.66 and 13.62 mm spare per side. Retainers overlap only 3 mm of outer bezel.
+Display's separate mounting features: 49 x 58 mm Pi pattern, external ears
+70.71 x 140 mm. This prototype uses the glass perimeter and original Pi
+standoffs; it does not depend on uncertain ear-thread engagement or offsets.
+
+Pi official drawing: 85 mm board length, 58 x 49 mm mounting centres,
+diameter 2.7 mm mounting holes. The drawing is explicitly approximate.
+Official active cooler drawing: 63.5 x 42.5 mm footprint, 13.7 mm height.
+Actual installed cooler unconfirmed. Rear, sides and top are open: no close
+wall or fan grille limits that envelope. Allow at least 10 mm free air beyond
+actual fan inlet and fin outlets. No thermal qualification has been performed.
+
+DK 3.0.3 official Gerber outline: x=0..136.525 mm including right projection,
+y=0..63.5 mm. Main rectangular body is 133.985 mm long; do not confuse the two.
+Drill tool T08 is 0.1260 in = 3.2004 mm. Selected hole centres, from Gerber
+origin, are (13.97,7.62), (15.24,55.88), (66.04,12.70) mm.
+Other T08 holes exist; only these three are used. Towers are 8 mm square with
+3.4 mm square holes; verify washer clearance against actual nearby parts.
+Dock ends at board x=83 mm, leaving roughly 53.5 mm of right board unsupported.
+The radio remains accessible for switches, both USB ports, buttons, reset,
+debug headers and battery inspection. It is not intended for pressing hard
+on the overhanging PCB or attaching shields without extra supports.
+
+CONNECTORS AND CABLES
+Open rear and sides avoid revision-specific port cutouts. Verify actual Pi
+USB-C, USB-A, Ethernet, micro-HDMI, GPIO, fan lead and microSD can be reached
+with the frame and feet in place. Frame's perimeter retainers may require
+moving cable routes; do not thread cables under a retainer or pinch a latch.
+Reserve an initial 35 mm straight plug/service region at USB-C/USB-A and DK
+USB connectors, and >=10 mm gentle FFC bend radius as prototype layout
+allowances. These are not published cable minima. Actual cable specification
+and connector boot geometry take precedence. Do not crease or strain the FFC.
+Because cables exit into open space, longer/large plugs can project beyond
+the stand. Confirm tabletop contact and routing at the 45-degree angle.
+
+VALIDATION COMPLETED
+All six mesh files: every undirected triangle edge has exactly two incidences,
+consistent opposite winding, positive enclosed volume, and documented bounds.
+Geometry is generated from exact box boundaries and an extruded foot polygon.
+No CAD kernel, slicer, physical print, dimensional test, load/tip test, RF range
+test, thermal soak, or installed-cable test has been performed.
+
+REQUIRED BEFORE FULL PRINT / INSTALL
+- Confirm radio marking is PCA10056 and provide its printed revision.
+- Confirm cooler model, any HAT or SSD, and printer usable bed dimensions.
+- Check landscape display orientation is acceptable.
+- Measure glass dimensions/edge stack and test padded perimeter fit.
+- Print coupon and inspect slicer preview at true scale.
+- Compare three DK hole centres using a paper template or low-infill dock.
+- Check battery holder clearance above plate and clear tower landing zones.
+- Dry assemble unpowered; check glass stress, retainers, all plugs and SD access.
+- Check cable pull and fingertip taps do not slide or tip the stand.
+- After installation, check real workload temperature and radio link quality.
+
+OFFICIAL REFERENCES (accessed 2026-10-10)
+Display product brief, June 2026, page 4 (7-inch drawing):
+https://pip-assets.raspberrypi.com/categories/1083-raspberry-pi-touch-display-2/documents/RP-009106-MM-6-Raspberry%20Pi%20Touch%20Display%202%20product%20brief.pdf
+Display connection/mounting instructions:
+https://www.raspberrypi.com/documentation/accessories/touch-display-2.html
+Pi 5 drawing:
+https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-mechanical-drawing.pdf
+Active cooler drawing:
+https://datasheets.raspberrypi.com/cooling/raspberry-pi-active-cooler-mechanical-drawing.pdf
+Cooling guidance:
+https://www.raspberrypi.com/documentation/computers/raspberry-pi.html
+Nordic hardware archive 3.0.3 (Altium PCB, assembly drawings, Gerber and drill):
+https://www.nordicsemi.com/Products/Development-hardware/nRF52840-DK/Download
+Used 400236.GM1 and 400236-RoundHoles.TXT, plus assembly drawing inspection.
+Local downloaded references are retained under work/references separately.

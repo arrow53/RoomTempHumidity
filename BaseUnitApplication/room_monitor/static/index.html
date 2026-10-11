@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#142925"><title>Roomlight · Room climate</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><div class="brand"><span class="brand-icon" aria-hidden="true">◒</span><span>roomlight<span class="brand-note">ROOM CLIMATE</span></span></div><div class="header-right"><span id="clock">—</span><div class="segments" role="group" aria-label="Temperature unit"><button id="celsius" aria-pressed="true">°C</button><button id="fahrenheit" aria-pressed="false">°F</button></div></div></header>
+<main>
+<div id="mode-banner" class="mode-banner">Connecting to local collector…</div><div id="connection" class="connection" role="status" aria-live="polite" hidden></div>
+<section class="overview" aria-labelledby="title"><div><p class="eyebrow">A FEEL FOR YOUR HOME</p><h1 id="title">Every room, at a glance.</h1><p id="summary" class="muted">Waiting for the collector</p></div><div class="overview-note"><span class="pulse" aria-hidden="true"></span><span id="refresh">Updates every 10 seconds</span></div></section>
+<section id="rooms" class="rooms" aria-label="Rooms"></section>
+<section class="history-panel" aria-labelledby="history-title"><div class="history-heading"><div><p class="eyebrow">THE BIGGER PICTURE</p><h2 id="history-title">Room history</h2><p id="history-subtitle" class="muted">Select a room above to explore its readings.</p></div><div class="segments ranges" role="group" aria-label="History range"><button data-hours="1" aria-pressed="false">1h</button><button data-hours="6" aria-pressed="false">6h</button><button data-hours="24" aria-pressed="true">24h</button></div></div>
+<div class="chart-key"><span><i class="temp-key"></i>Temperature <strong id="history-temp">—</strong></span><span><i class="humidity-key"></i>Humidity <strong id="history-humidity">—</strong></span></div>
+<div id="chart-wrap" class="chart-wrap"><svg id="chart" viewBox="0 0 900 220" role="img" aria-label="No history available"></svg><p id="chart-empty">No readings yet.</p></div><div class="history-foot"><span>Collector receipt time · <span id="timezone"></span></span><span id="aggregation">Bucket averages · gaps stay visible</span></div></section>
+<footer><span>Local collector <span aria-hidden="true">/</span> <span id="footer-mode">Connecting</span></span><span id="retention">SQLite history</span></footer>
+</main></body></html>
