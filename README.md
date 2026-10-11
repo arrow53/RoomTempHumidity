@@ -34,17 +34,18 @@ flowchart LR
   HTML/CSS/JavaScript provides room status, history and Celsius/Fahrenheit controls.
   CoAP bind retries keep the local dashboard available while a Thread address is
   missing. The Touch Display 2 presents the landscape browser/kiosk UI.
-- **Current protocol:** **Thread + IPv6 + CoAP. Matter is not implemented.**
-  Matter integration would be a separate future feature.
+- **Protocol:** Thread + IPv6 + CoAP.
 
 ## Sensor hardware
 
-| Enclosure A2 | PCB A3 top copper |
+| Enclosure A2 | Populated PCB A3 — angled 3D view |
 | --- | --- |
-| ![Native housing and stand render](docs/images/sensor-housing-A2.png) | ![A3 CAM copper view](docs/images/sensor-pcb-A3-copper.png) |
+| ![Native housing and stand render](docs/images/sensor-housing-A2.png) | ![Angled native KiCad view of populated A3 PCB](docs/images/sensor-pcb-A3-populated.png) |
 
-The enclosure is a native OpenSCAD render. The PCB is a CAM view of the current
-authored layout; neither image proves assembled hardware qualification.
+The enclosure is a native OpenSCAD render. The populated PCB is a native KiCad
+3D render of the unchanged A3 layout and its 16 component placements. Package
+models show nominal geometry; the radio module uses a simplified dimension-based
+body/shield. Neither image proves assembled hardware qualification.
 
 The working prototype uses an **nRF54L15 DK and SHT40 breakout**. The custom
 45 × 55 mm PCB uses Raytac AN54LQ-P15 and SHT40; A3 changes the regulator to
